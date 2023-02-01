@@ -1,0 +1,24 @@
+body {
+    background-image: url(../img/24652959_i759.jpg);
+    background-size: 500px;
+}
+
+.logo {
+    width: 10%;
+}
+
+h2, h3 {
+    font-family: 'Pacifico', cursive;
+}
+
+li {
+    list-style: none;
+}
+
+section, footer {
+    height: 50vh;
+}
+
+.bi {
+    font-size: 3rem;
+}

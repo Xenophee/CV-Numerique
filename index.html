@@ -5,84 +5,125 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300&family=Pacifico&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./public/assets/bootstrap-icons-1.10.3/bootstrap-icons.css">
     <link rel="stylesheet" href="./public/assets/css/style.css">
     <title>CV Numérique - Morsch Perrine</title>
 </head>
 
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg bg-light">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">Navbar</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Features</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Pricing</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled">Disabled</a>
-                        </li>
-                    </ul>
+    <div class="container">
+        <header>
+            <nav class="navbar navbar-expand-lg bg-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">CV-Numérique</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#about">A propos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#skills">Compétences</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#portfolio">Portfolio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contact">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-        </nav>
-    </header>
+            </nav>
+        </header>
+    </div>
+
 
     <main>
         <div class="container">
+            <h1 class="text-center">MORSCH Perrine - Developpeur Web</h1>
 
             <!-- INFORMATIONS DE BASE -->
-            <section>
+            <section id="about" class="bg-danger">
                 <div class="row">
                     <div class="col">
-
+                        <h2 class="text-center mt-5">A propos</h2>
+                        <div>
+                            <ul>
+                                <li><i class="bi bi-envelope me-3"></i>perrine.morsch@gmail.com</li>
+                                <li><i class="bi bi-phone me-3"></i>06.58.06.93.54</li>
+                                <li>Ville actuelle :</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </section>
 
             <!-- LANGAGES INFORMATIQUES -->
-            <section>
+            <section id="skills" class="bg-warning">
                 <div class="row">
                     <div class="col">
-
+                        <!-- Faire un système de roue avec HTML / CSS / JS / PHP / SQL -->
+                        <div class="bg-light px-5">
+                            <div>
+                                <h2 class="text-center mt-5 mb-4">Langages</h2>
+                                <img src="./public/assets/img/html.png" class="img-fluid logo me-3" alt="logo HTML5">HTML5
+                            </div>
+                            <div class="mt-3">
+                                <img src="./public/assets/img/css.png" class="img-fluid logo me-3" alt="logo CSS">CSS
+                            </div>
+                            <div class="mt-3">
+                                <img src="./public/assets/img/js.png" class="img-fluid logo me-3" alt="logo JS">JS
+                            </div>
+                        </div>
                     </div>
+                    <div class="col"></div>
                 </div>
             </section>
 
-            <!-- COMPETENCES TRANSVERSALES -->
-            <section>
+            <!-- PARCOURS -->
+            <section id="" class="bg-danger">
                 <div class="row">
                     <div class="col">
-
+                        <h2 class="text-center mt-5">Parcours</h2>
                     </div>
                 </div>
             </section>
 
             <!-- CENTRE D'INTERETS -->
-            <section>
-                <div class="row">
+            <section id="" class="bg-warning">
+                <div class="row justify-content-around align-items-center">
                     <div class="col">
-
+                        <h2>Centres d'intérêt</h2>
+                    </div>
+                    <div class="col">
+                        <div>
+                            Code
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div>
+                            Ecriture
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div>
+                            Jeux vidéo
+                        </div>
                     </div>
                 </div>
             </section>
 
             <!-- PORTFOLIO -->
-            <section>
+            <section id="portfolio" class="bg-danger">
                 <div class="row">
                     <div class="col">
-
+                        <h2 class="text-center mt-5">Portfolio</h2>
                     </div>
                 </div>
             </section>
@@ -92,15 +133,43 @@
 
 
     <!-- FOOTER [RESEAUX SOCIAUX]-->
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col">
 
+    <div class="container">
+        <footer id="contact" class="bg-success">
+            <div class="row justify-content-around">
+                <h2 class="text-center mt-5">Contact & Réseaux sociaux</h2>
+
+                <!-- DEV -->
+                <div class="col-12 col-lg-4">
+                    <article class="bg-light mx-4">
+                        <h3 class="text-center pt-4 mt-5">Développement</h3>
+                        <div class="d-flex justify-content-around py-5">
+                            <a href="" target="_blank" rel="noopener noreferrer"><i class="bi bi-github"></i></a>
+                            <a href="" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin"></i></a>
+                        </div>
+                    </article>
                 </div>
+
+                <div class="col-12 col-lg-4">
+                    <div class="bg-light">
+
+                    </div>
+                </div>
+
+                <!-- ECRITURE -->
+                <div class="col-12 col-lg-4">
+                    <article class="bg-light mx-4">
+                        <h3 class="text-center pt-4 mt-5">Ecriture</h3>
+                        <div class="d-flex justify-content-around py-5">
+                            <a href="" target="_blank" rel="noopener noreferrer"><i class="bi bi-facebook"></i></a>
+                            <a href="" target="_blank" rel="noopener noreferrer"><i class="bi bi-twitter"></i></a>
+                        </div>
+                    </article>
+                </div>
+
             </div>
-        </div>
-    </footer>
+        </footer>
+    </div>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
