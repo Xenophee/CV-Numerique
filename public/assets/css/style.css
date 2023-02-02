@@ -3,6 +3,13 @@ body {
     background-size: 500px;
 }
 
+.navbar {
+    background-color: #b2956a;
+    font-family: 'Pacifico', cursive;
+    font-size: 1.5rem;
+}
+
+
 .logo {
     width: 10%;
 }
