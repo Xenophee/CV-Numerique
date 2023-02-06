@@ -1,6 +1,7 @@
 body {
     background-image: url(../img/24652959_i759.jpg);
     background-size: 500px;
+    font-size: 1.3rem;
 }
 
 .navbar {
@@ -9,12 +10,40 @@ body {
     font-size: 1.5rem;
 }
 
-
 .logo {
     width: 10%;
 }
 
-h2, h3 {
+#about, #hobbies {
+    background-color: #121011;
+    color: #b2956a;
+    border: #b2956a 5px dashed;
+    box-shadow: #121011 0px 8px 16px 0px, #121011 0px 2px 16px 0px;
+}
+
+#skills, #portfolio {
+    background-color: #463120;
+    color: #b2956a;
+    border: #b2956a 5px dashed;
+    box-shadow: #463120 0px 2px 4px 0px, #463120 0px 2px 16px 0px;
+}
+
+#journey, #contact {
+    background-color: #b2956a;
+    border: #121011 5px dashed;
+    box-shadow: #b2956a 0px 2px 4px 0px, #b2956a 0px 2px 16px 0px;
+}
+
+article {
+    border: #121011 3px dotted;
+    border-radius: 20px;
+}
+
+#contact a {
+    color: #463120;
+}
+
+h2, h3, h4, h5 {
     font-family: 'Pacifico', cursive;
 }
 
