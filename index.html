@@ -50,7 +50,7 @@
         <div class="container">
             <!-- INFORMATIONS DE BASE -->
             <div class="row">
-                <div class="col  nameSection py-5">
+                <div class="col nameSection py-5">
                     <h1 class="text-center mb-4">MORSCH Perrine</h1>
                     <h2 class="text-center">Developpeur Web</h2>
                 </div>
@@ -63,9 +63,9 @@
                     <div class="col">
                         <div>
                             <ul>
-                                <li><i class="bi bi-envelope me-3"></i>perrine.morsch@gmail.com</li>
-                                <li><i class="bi bi-phone me-3"></i>06.58.06.93.54</li>
-                                <li>Ville actuelle :</li>
+                                <li><a href = "mailto: perrine.morsch@gmail.com"><i class="bi bi-envelope me-3"></i>perrine.morsch@gmail.com</a></li>
+                                <li><a href="tel:0658069354"><i class="bi bi-phone me-3"></i>06.58.06.93.54</a></li>
+                                <li><i class="bi bi-geo-alt-fill"></i>Ville actuelle : Amiens</li>
                             </ul>
                         </div>
                     </div>
@@ -79,36 +79,49 @@
             <section id="skills" class="my-5">
                 <div class="row">
                     <h3 class="text-center mt-5">Compétences</h3>
-                    <div class="col">
+
+                    <div class="col-12 col-lg-6">
                         <!-- Faire un système de roue avec HTML / CSS / JS / PHP / SQL -->
                         <!-- Bootstrap / Wordpress -->
                         <!-- Outils : Git / Laragon / Figma -->
-                        <div class="bg-light px-5">
-                            <div>
-                                <h4 class="text-center mt-5 mb-4">Langages</h4>
-                                <img src="./public/assets/img/html.png" class="img-fluid logo me-3"
-                                    alt="logo HTML5">HTML5
-                            </div>
-                            <div class="mt-3">
-                                <img src="./public/assets/img/css.png" class="img-fluid logo me-3" alt="logo CSS">CSS
-                            </div>
-                            <div class="mt-3">
-                                <img src="./public/assets/img/js.png" class="img-fluid logo me-3" alt="logo JS">JS
+                        <div class="d-flex flex-column align-items-center justify-content-center my-5">
+                            <h4>Langages</h4>
+                            <div class="containerLanguages mt-5">
+                                <div class="btnLanguages d-flex justify-content-center align-items-center">
+                                    <img src="./public/assets/img/code.png" class="iconLanguages" alt="">
+                                </div>
+    
+                                <div class="d-flex justify-content-center align-items-center languagesMenu html">
+                                    <img src="./public/assets/img/html-5.png" class="iconLanguages" alt="">
+                                </div>
+                                <div class="d-flex justify-content-center align-items-center languagesMenu css">
+                                    <img src="./public/assets/img/css-3.png" class="iconLanguages" alt="">
+                                </div>
+                                <div class="d-flex justify-content-center align-items-center languagesMenu js">
+                                    <img src="./public/assets/img/js.png" class="iconLanguages" alt="">
+                                </div>
+                                <div class="d-flex justify-content-center align-items-center languagesMenu php">
+                                    <img src="./public/assets/img/php.png" class="iconLanguages" alt="">
+                                </div>
+                                <div class="d-flex justify-content-center align-items-center languagesMenu sql">
+                                    <img src="./public/assets/img/mysql.png" class="iconLanguages" alt="">
+                                </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col">
-                        <div>
+                    <div class="col-12 col-lg-6">
+                        <div class="d-flex justify-content-center my-5">
                             <h4>Techniques</h4>
                         </div>
                     </div>
-                    <div class="col">
+                    <div class="col-12">
                         <!-- FAIRE UNE DIVISION TECHNIQUES ? En déplaçant les trucs de dev ici et le reste en autres avec les langues -->
                         <!-- système : windows -->
                         <!-- autres : SEO, VSC, outils bureautiques (word, powerpoint, etc)-->
                         <!-- savoir être : curiosité, persévérance, rigueur -->
                         <!-- Langues Anglais / Allemand -->
+                        
                     </div>
                 </div>
             </section>
@@ -118,16 +131,74 @@
                 <div class="row">
                     <div class="col d-flex flex-column align-items-center justify-content-center">
                         <h3 class="my-5">Parcours</h3>
-                        <small class="mb-4">2022/2023</small>
-                        <div class="journeyDescription py-4 mx-5">
+                        <small class="fs-3 mb-4" id="date">2022/2023</small>
+
+                        <!-- 2022/2023 -->
+                        <div class="journeyDescription py-4 px-4 mx-5">
                             <h4 class="text-center mt-2"><img src="./public/assets/img/graduation-hat.png" class="me-3"
-                                    alt=""> Developpeur Web & Web Mobile</h4>
-                            <h5 class="text-center mt-4">La Manu, Ecole Supérieure des Métiers du Numérique, à Amiens
+                                    alt="">Developpeur Web & Web Mobile</h4>
+                            <h5 class="text-center mt-4 mb-5">La Manu, Ecole Supérieure des Métiers du Numérique, à Amiens (80)
+                            </h5>
+                            <ul>
+                                <li>Apprentissage des langages HTML, CSS, JS, PHP, MySQL</li>
+                                <li>Prise en main du framework Bootstrap</li>
+                                <li>Prise en main de Wordpress, du theme builder DIVI & création d'un thème en php</li>
+                                <li>Utilisation de fichiers JSON & XML</li>
+                                <li>Programmation orientée objet et utilisation du modèle MVC</li>
+                                <li>Création de base de données avec la méthode Merise</li>
+                                
+                                <li class="mt-4">Utilisation de la méthode AGILE</li>
+                                <li>Veille technologique / benchmark</li>
+                                <li>Réalisation de maquettes avec l'outil Figma</li>
+                                <li>Utilisation des outils tel que Git, Looping, Laragon, PHPMyAdmin, Visual Studio Code</li>
+
+                                <li class="mt-4">Réalisation d'un projet final de site Web à présenter devant un jury avec rédaction d'un dossier contenant le cahier des charges et les spécifications techniques du projet</li>
+                            </ul>
+                        </div>
+
+                        <!-- Depuis 2018 -->
+                        <div class="journeyDescription py-4 px-4 mx-5 d-none">
+                            <h4 class="text-center mt-2"><img src="./public/assets/img/quill-drawing-a-line.png" class="me-3"
+                                    alt="">Ecrivain</h4>
+                            <h5 class="text-center mt-4 mb-5">
+                            </h5>
+                            <ul>
+                                <li>Concevoir un projet d'écriture</li>
+                                <li>Recueillir des informations préalables à l'écriture</li>
+                                <li>Ecrire des romans, nouvelles, contes (registre Science-Fiction / Fantasy / Fantastique)</li>
+                                <li>Présenter le texte pour avis, correction, réécriture et apporter modifications nécessaires</li>
+                            </ul>
+                        </div>
+
+                        <!-- 2016 -->
+                        <div class="journeyDescription py-4 mx-5 d-none">
+                            <h4 class="text-center mt-2"><img src="./public/assets/img/graduation-hat.png" class="me-3"
+                                    alt="">Licence de Science Politique</h4>
+                            <h5 class="text-center mt-4">Université de Picardie Jules Verne, à Amiens (80)
                             </h5>
                             <ul></ul>
                         </div>
+
+                        <!-- 2013 -->
+                        <div class="journeyDescription py-4 mx-5 d-none">
+                            <h4 class="text-center mt-2"><img src="./public/assets/img/graduation-hat.png" class="me-3"
+                                    alt="">Deug de Droit</h4>
+                            <h5 class="text-center mt-4">Université de Picardie Jules Verne, à Amiens (80)
+                            </h5>
+                            <ul></ul>
+                        </div>
+
+                        <!-- 2010 -->
+                        <div class="journeyDescription py-4 mx-5 d-none">
+                            <h4 class="text-center mt-2"><img src="./public/assets/img/premium-badge.png" class="me-3"
+                                    alt="">Bac Littéraire</h4>
+                            <h5 class="text-center mt-4">Lycée Pierre de la Ramée, à Saint-Quentin (02)
+                            </h5>
+                            <ul></ul>
+                        </div>
+
                         <div class="stepJourney mt-4 mb-3">
-                            <input type="range" class="form-range" min="0" max="4" aria-label="Défilement du parcours" id="customRange1">
+                            <input type="range" class="form-range" value="0" min="0" max="4" aria-label="Défilement du parcours" id="stepJourney">
                         </div>
                     </div>
                 </div>
@@ -141,11 +212,11 @@
                     </div>
                     <div class="col-12 col-lg-3">
                         <div class="d-flex flex-lg-column justify-content-around">
-                            <input type="image" src="./public/assets/img/programming.png" class="programmingHobby my-4"
+                            <input type="image" src="./public/assets/img/programming2.png" class="programmingHobby hobby active my-4"
                                 value= />
-                            <input type="image" src="./public/assets/img/lecriture.png" class="writtingHobby my-4"
+                            <input type="image" src="./public/assets/img/lecriture.png" class="writtingHobby hobby my-4"
                                 value= />
-                            <input type="image" src="./public/assets/img/jeu-video.png" class="gamesHobby my-4"
+                            <input type="image" src="./public/assets/img/jeu-video.png" class="gamesHobby hobby my-4"
                                 value= />
                         </div>
                     </div>
@@ -166,15 +237,8 @@
                 </div>
             </section>
 
-        </div>
-    </main>
-
-
-    <!-- FOOTER [RESEAUX SOCIAUX]-->
-
-    <div class="container">
-        <footer id="contact" class="my-5">
-            <div class="row justify-content-around">
+            <section id="contact" class="my-5">
+                <div class="row justify-content-around">
                 <h3 class="text-center mt-5">Réseaux sociaux</h3>
 
                 <!-- DEV -->
@@ -201,6 +265,24 @@
                                     class="bi bi-twitter"></i></a>
                         </div>
                     </article>
+                </div>
+
+            </div>
+            </section>
+
+        </div>
+    </main>
+
+
+    <!-- FOOTER [RESEAUX SOCIAUX]-->
+
+    <div class="container">
+        <footer class="my-5">
+            <div class="row justify-content-around">
+
+                <div class="col-12 d-flex flex-column justify-content-center align-items-center py-3">
+                    <small>MORSCH Perrine © 2023</small> 
+                    <small>Tous droits réservés</small>
                 </div>
 
             </div>
