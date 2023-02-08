@@ -1,4 +1,5 @@
 body {
+    font-family: 'Playfair Display', serif;
     background-image: url(../img/24652959_i759.jpg);
     background-size: 500px;
     font-size: 1.3rem;
@@ -8,30 +9,50 @@ body {
     background-color: #b2956a;
     font-family: 'Pacifico', cursive;
     font-size: 1.5rem;
+    border-bottom: #121011 4px double;
+}
+
+.navbar-brand {
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+}
+
+.navbar-nav {
+    width: 100%;
 }
 
 .logo {
     width: 10%;
 }
 
+main {
+    margin-top: 15vh;
+}
+
+.nameSection {
+    backdrop-filter: blur(3px);
+    color: #b2956a;
+    border: #b2956a 4px double;
+}
+
 #about, #hobbies {
     background-color: #121011;
     color: #b2956a;
     border: #b2956a 5px dashed;
-    box-shadow: #121011 0px 8px 16px 0px, #121011 0px 2px 16px 0px;
+    box-shadow: #121011 0px 8px 50px 0px, #121011 0px 2px 50px 0px;
 }
 
 #skills, #portfolio {
     background-color: #463120;
     color: #b2956a;
     border: #b2956a 5px dashed;
-    box-shadow: #463120 0px 2px 4px 0px, #463120 0px 2px 16px 0px;
+    box-shadow: #121011 0px 8px 50px 0px, #121011 0px 2px 50px 0px;
 }
 
 #journey, #contact {
     background-color: #b2956a;
     border: #121011 5px dashed;
-    box-shadow: #b2956a 0px 2px 4px 0px, #b2956a 0px 2px 16px 0px;
+    box-shadow: #121011 0px 8px 50px 0px, #121011 0px 2px 50px 0px;
 }
 
 article {
@@ -43,7 +64,83 @@ article {
     color: #463120;
 }
 
-h2, h3, h4, h5 {
+
+
+
+/* PARCOURS */
+
+.journeyDescription {
+    background-color: #121011;
+    color: #b2956a;
+    width: 80%;
+}
+
+.stepJourney {
+    width: 50%;
+}
+
+.form-range::-webkit-slider-thumb {
+    background-color: #4d433a;
+    border-color: #ccac90;
+    border-width: 1px;
+    border-style: solid;
+    height: 25px;
+    width: 25px;
+}
+
+.form-range::-webkit-slider-thumb:active {
+    background-color: #ccac90;
+    box-shadow: #4d433a 0 0 0 2px;
+}
+
+.form-range::-webkit-slider-thumb:focus {
+    box-shadow: #4d433a 0 0 4px !important;
+    border-color: red;
+}
+
+.form-range::-webkit-slider-runnable-track {
+    border-color: #ccac90;
+    border-width: 1px;
+    border-style: solid;
+    height: 15px;
+}
+
+/* HOBBIES */
+
+
+input[type="image"] {
+    width: 30%;
+    border: #463120 5px double;
+    border-radius: 50%;
+}
+
+.hobbiesDescription {
+    background-color: #b2956a;
+    color: #121011;
+    border: #463120 10px double;
+    min-height: 20vh;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+
+
+/* FOOTER */
+.returnTop {
+    width: 50%;
+    height: 35%;
+    border: #121011 3px dotted;
+    border-radius: 50%;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2.3rem;
+}
+
+h2, h3, h4 {
     font-family: 'Pacifico', cursive;
 }
 
@@ -51,9 +148,9 @@ li {
     list-style: none;
 }
 
-section, footer {
-    height: 50vh;
-}
+/* section, footer {
+    min-height: 50vh;
+} */
 
 .bi {
     font-size: 3rem;
