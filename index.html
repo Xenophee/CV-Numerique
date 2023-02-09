@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Playfair+Display&display=swap"
+        rel="stylesheet">
     <!-- <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300&family=Pacifico&display=swap" rel="stylesheet"> -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./public/assets/bootstrap-icons-1.10.3/bootstrap-icons.css">
@@ -58,19 +59,37 @@
 
             <!-- A PROPOS -->
             <section id="about" class="my-5">
-                <div class="row">
-                    <h3 class="text-center mt-5">A propos</h3>
-                    <div class="col">
-                        <div>
+                <div class="row justify-content-around align-items-center">
+                    <h3 class="text-center my-5">A propos</h3>
+                    <div class="col-12 col-lg-4">
+                        <div class="d-flex flex-column justify-content-center infoContact mt-5">
                             <ul>
-                                <li><a href = "mailto: perrine.morsch@gmail.com"><i class="bi bi-envelope me-3"></i>perrine.morsch@gmail.com</a></li>
-                                <li><a href="tel:0658069354"><i class="bi bi-phone me-3"></i>06.58.06.93.54</a></li>
-                                <li><i class="bi bi-geo-alt-fill"></i>Ville actuelle : Amiens</li>
+                                <li class="mb-4"><a href="mailto: perrine.morsch@gmail.com"><i
+                                            class="bi bi-envelope me-3"></i>perrine.morsch@gmail.com</a></li>
+                                <li class="mb-4"><a href="tel:0658069354"><i
+                                            class="bi bi-phone me-3"></i>06.58.06.93.54</a></li>
+                                <li class="mb-4"><i class="bi bi-geo-alt-fill me-3"></i>Ville actuelle : Amiens</li>
                             </ul>
                         </div>
                     </div>
-                    <div class="col">
-                        <a href="" download="./public/assets/img/html.png">Télécharger mon CV</a>
+                    <div class="col-12 col-lg-5">
+                        <div class="mt-5">
+                            <p>Je suis une personne passionnée par les nouvelles technologies et les défis
+                                intellectuels. Après avoir obtenu mon diplôme en droit,
+                                j'ai décidé de poursuivre ma formation en programmation informatique pour combiner mes
+                                deux passions et devenir développeur.
+                                Je suis autodidacte et j'aime mettre mes compétences en pratique en développant des
+                                projets personnels. Je suis convaincu que ma formation
+                                en droit m'a donné une perspective unique sur les questions juridiques liées à la
+                                technologie, ce qui peut être un atout supplémentaire
+                                pour les employeurs. Je suis motivé et déterminé à développer mes compétences en tant
+                                que développeur et à faire une différence dans le
+                                monde de la technologie</p>
+                        </div>
+                        <div class="d-flex justify-content-center my-5">
+                            <button type="button" class="btn downloadCv py-3 px-5 fs-5"><a href=""
+                                    download="./public/assets/img/html.png">Télécharger mon CV</a></button>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -80,17 +99,28 @@
                 <div class="row">
                     <h3 class="text-center mt-5">Compétences</h3>
 
-                    <div class="col-12 col-lg-6">
-                        <!-- Faire un système de roue avec HTML / CSS / JS / PHP / SQL -->
-                        <!-- Bootstrap / Wordpress -->
-                        <!-- Outils : Git / Laragon / Figma -->
+                    <div class="col-12 col-lg-4">
+                        <div class="d-flex flex-column align-items-center justify-content-center my-5">
+                            <h4>Outils</h4>
+                            <ul class="mt-5">
+                                <li>Figma</li>
+                                <li>Visual Studio Code</li>
+                                <li>Git</li>
+                                <li>Laragon</li>
+                                <li>PHPMyAdmin</li>
+                                <li>Looping</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-4">
                         <div class="d-flex flex-column align-items-center justify-content-center my-5">
                             <h4>Langages</h4>
                             <div class="containerLanguages mt-5">
                                 <div class="btnLanguages d-flex justify-content-center align-items-center">
                                     <img src="./public/assets/img/code.png" class="iconLanguages" alt="">
                                 </div>
-    
+
                                 <div class="d-flex justify-content-center align-items-center languagesMenu html">
                                     <img src="./public/assets/img/html-5.png" class="iconLanguages" alt="">
                                 </div>
@@ -110,19 +140,20 @@
                         </div>
                     </div>
 
-                    <div class="col-12 col-lg-6">
-                        <div class="d-flex justify-content-center my-5">
-                            <h4>Techniques</h4>
+                    <div class="col-12 col-lg-4">
+                        <div class="d-flex flex-column align-items-center justify-content-center my-5">
+                            <h4>Autres</h4>
+                            <ul class="mt-5">
+                                <li><span>Framework</span> : Bootstrap</li>
+                                <li><span>CMS</span> : Wordpress</li>
+                                <li><span>Systèmes</span> : Windows, Linux</li>
+                                <li><span>Langues</span> : Anglais / Allemand</li>
+                                <li><span>Autres</span> : SEO, outils bureautiques (word, powerpoint, etc)</li>
+                                <li><span>Savoir être</span> : Curiosité, persévérance, rigueur</li>
+                            </ul>
                         </div>
                     </div>
-                    <div class="col-12">
-                        <!-- FAIRE UNE DIVISION TECHNIQUES ? En déplaçant les trucs de dev ici et le reste en autres avec les langues -->
-                        <!-- système : windows -->
-                        <!-- autres : SEO, VSC, outils bureautiques (word, powerpoint, etc)-->
-                        <!-- savoir être : curiosité, persévérance, rigueur -->
-                        <!-- Langues Anglais / Allemand -->
-                        
-                    </div>
+
                 </div>
             </section>
 
@@ -137,7 +168,8 @@
                         <div class="journeyDescription py-4 px-4 mx-5">
                             <h4 class="text-center mt-2"><img src="./public/assets/img/graduation-hat.png" class="me-3"
                                     alt="">Developpeur Web & Web Mobile</h4>
-                            <h5 class="text-center mt-4 mb-5">La Manu, Ecole Supérieure des Métiers du Numérique, à Amiens (80)
+                            <h5 class="text-center mt-4 mb-5">La Manu, Ecole Supérieure des Métiers du Numérique, à
+                                Amiens (80)
                             </h5>
                             <ul>
                                 <li>Apprentissage des langages HTML, CSS, JS, PHP, MySQL</li>
@@ -146,59 +178,85 @@
                                 <li>Utilisation de fichiers JSON & XML</li>
                                 <li>Programmation orientée objet et utilisation du modèle MVC</li>
                                 <li>Création de base de données avec la méthode Merise</li>
-                                
+
                                 <li class="mt-4">Utilisation de la méthode AGILE</li>
                                 <li>Veille technologique / benchmark</li>
                                 <li>Réalisation de maquettes avec l'outil Figma</li>
-                                <li>Utilisation des outils tel que Git, Looping, Laragon, PHPMyAdmin, Visual Studio Code</li>
+                                <li>Utilisation des outils tel que Git, Looping, Laragon, PHPMyAdmin, Visual Studio Code
+                                </li>
 
-                                <li class="mt-4">Réalisation d'un projet final de site Web à présenter devant un jury avec rédaction d'un dossier contenant le cahier des charges et les spécifications techniques du projet</li>
+                                <li class="mt-4">Réalisation d'un projet final de site Web à présenter devant un jury
+                                    avec rédaction d'un dossier contenant le cahier des charges et les spécifications
+                                    techniques du projet</li>
                             </ul>
                         </div>
 
                         <!-- Depuis 2018 -->
                         <div class="journeyDescription py-4 px-4 mx-5 d-none">
-                            <h4 class="text-center mt-2"><img src="./public/assets/img/quill-drawing-a-line.png" class="me-3"
-                                    alt="">Ecrivain</h4>
+                            <h4 class="text-center mt-2"><img src="./public/assets/img/quill-drawing-a-line.png"
+                                    class="me-3" alt="">Ecrivain</h4>
                             <h5 class="text-center mt-4 mb-5">
                             </h5>
                             <ul>
                                 <li>Concevoir un projet d'écriture</li>
                                 <li>Recueillir des informations préalables à l'écriture</li>
-                                <li>Ecrire des romans, nouvelles, contes (registre Science-Fiction / Fantasy / Fantastique)</li>
-                                <li>Présenter le texte pour avis, correction, réécriture et apporter modifications nécessaires</li>
+                                <li>Ecrire des romans, nouvelles, contes (registre Science-Fiction / Fantasy /
+                                    Fantastique)</li>
+                                <li>Présenter le texte pour avis, correction, réécriture et apporter modifications
+                                    nécessaires</li>
                             </ul>
                         </div>
 
                         <!-- 2016 -->
-                        <div class="journeyDescription py-4 mx-5 d-none">
+                        <div class="journeyDescription py-4 px-4 mx-5 d-none">
                             <h4 class="text-center mt-2"><img src="./public/assets/img/graduation-hat.png" class="me-3"
                                     alt="">Licence de Science Politique</h4>
-                            <h5 class="text-center mt-4">Université de Picardie Jules Verne, à Amiens (80)
+                            <h5 class="text-center mt-4 mb-5">Université de Picardie Jules Verne, à Amiens (80)
                             </h5>
-                            <ul></ul>
+                            <ul>
+                                <li>Sociologie des institutions</li>
+                                <li>Analyse des politiques publiques</li>
+                                <li>Théorie politique</li>
+                                <li>Vie politique et politique de la ville</li>
+                                <li>Organisations politiques</li>
+                                <li>Politique comparée</li>
+                                <li>Politique européenne</li>
+                                <li>Politique sociale</li>
+                                <li>Politiques territoriales</li>
+                                <li>Sociologie des médias et de la communication</li>
+                            </ul>
                         </div>
 
                         <!-- 2013 -->
-                        <div class="journeyDescription py-4 mx-5 d-none">
+                        <div class="journeyDescription py-4 px-4 mx-5 d-none">
                             <h4 class="text-center mt-2"><img src="./public/assets/img/graduation-hat.png" class="me-3"
                                     alt="">Deug de Droit</h4>
-                            <h5 class="text-center mt-4">Université de Picardie Jules Verne, à Amiens (80)
+                            <h5 class="text-center mt-4 mb-5">Université de Picardie Jules Verne, à Amiens (80)
                             </h5>
-                            <ul></ul>
+                            <ul>
+                                <li>Droit constitutionnel</li>
+                                <li>Droit communautaire</li>
+                                <li>Droit pénal</li>
+                                <li>Droit civil (biens, famille, obligations, contrats)</li>
+                                <li>Droit administratif</li>
+                                <li>Institutions juridictionnelles et administratives</li>
+                                <li>Finances publiques</li>
+                                <li>Procédure pénale</li>
+                                <li>Relations internationales</li>
+                            </ul>
                         </div>
 
                         <!-- 2010 -->
-                        <div class="journeyDescription py-4 mx-5 d-none">
+                        <div class="journeyDescription py-4 px-4 mx-5 d-none">
                             <h4 class="text-center mt-2"><img src="./public/assets/img/premium-badge.png" class="me-3"
                                     alt="">Bac Littéraire</h4>
-                            <h5 class="text-center mt-4">Lycée Pierre de la Ramée, à Saint-Quentin (02)
+                            <h5 class="text-center mt-4 mb-5">Lycée Pierre de la Ramée, à Saint-Quentin (02)
                             </h5>
-                            <ul></ul>
                         </div>
 
                         <div class="stepJourney mt-4 mb-3">
-                            <input type="range" class="form-range" value="0" min="0" max="4" aria-label="Défilement du parcours" id="stepJourney">
+                            <input type="range" class="form-range" value="0" min="0" max="4"
+                                aria-label="Défilement du parcours" id="stepJourney">
                         </div>
                     </div>
                 </div>
@@ -212,8 +270,8 @@
                     </div>
                     <div class="col-12 col-lg-3">
                         <div class="d-flex flex-lg-column justify-content-around">
-                            <input type="image" src="./public/assets/img/programming2.png" class="programmingHobby hobby active my-4"
-                                value= />
+                            <input type="image" src="./public/assets/img/programming2.png"
+                                class="programmingHobby hobby active my-4" value= />
                             <input type="image" src="./public/assets/img/lecriture.png" class="writtingHobby hobby my-4"
                                 value= />
                             <input type="image" src="./public/assets/img/jeu-video.png" class="gamesHobby hobby my-4"
@@ -222,7 +280,10 @@
                     </div>
                     <div class="col-12 col-lg-6">
                         <div class="hobbiesDescription mx-2 mb-2 mx-lg-0 mb-lg-0 me-lg-5">
-                            <p>Ecrire le descriptif ici</p>
+                            <p class="mx-3" id="textHobby">Passionnée par le code depuis que j’en ai découvert les bases
+                                dans le développement web, j’aime explorer de nouvelles possibilités et découvrir
+                                de nouvelles techniques en autodidacte pour améliorer mon niveau dans ce domaine. Je me
+                                lance des défis de projet personnel pendant mes heures libres.</p>
                         </div>
                     </div>
                 </div>
@@ -239,35 +300,35 @@
 
             <section id="contact" class="my-5">
                 <div class="row justify-content-around">
-                <h3 class="text-center mt-5">Réseaux sociaux</h3>
+                    <h3 class="text-center mt-5">Réseaux sociaux</h3>
 
-                <!-- DEV -->
-                <div class="col-12 col-lg-4">
-                    <article class="shadow-lg mx-4 mt-5 mb-4 mb-lg-5">
-                        <h4 class="text-center pt-4">Développement</h4>
-                        <div class="d-flex justify-content-around py-5">
-                            <a href="https://github.com/Xenophee" target="_blank" rel="noopener noreferrer"
-                                title="Github"><i class="bi bi-github"></i></a>
-                            <a href="" target="_blank" rel="noopener noreferrer" title="Linkedin"><i
-                                    class="bi bi-linkedin"></i></a>
-                        </div>
-                    </article>
+                    <!-- DEV -->
+                    <div class="col-12 col-lg-4">
+                        <article class="shadow-lg mx-4 mt-5 mb-4 mb-lg-5">
+                            <h4 class="text-center pt-4">Développement</h4>
+                            <div class="d-flex justify-content-around py-5">
+                                <a href="https://github.com/Xenophee" target="_blank" rel="noopener noreferrer"
+                                    title="Github"><i class="bi bi-github"></i></a>
+                                <a href="" target="_blank" rel="noopener noreferrer" title="Linkedin"><i
+                                        class="bi bi-linkedin"></i></a>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- ECRITURE -->
+                    <div class="col-12 col-lg-4">
+                        <article class="shadow-lg mx-4 mt-lg-5 mb-4 mb-lg-5">
+                            <h4 class="text-center pt-4">Ecriture</h4>
+                            <div class="d-flex justify-content-around py-5">
+                                <a href="" target="_blank" rel="noopener noreferrer" title="Facebook"><i
+                                        class="bi bi-facebook"></i></a>
+                                <a href="" target="_blank" rel="noopener noreferrer" title="Twitter"><i
+                                        class="bi bi-twitter"></i></a>
+                            </div>
+                        </article>
+                    </div>
+
                 </div>
-
-                <!-- ECRITURE -->
-                <div class="col-12 col-lg-4">
-                    <article class="shadow-lg mx-4 mt-lg-5 mb-4 mb-lg-5">
-                        <h4 class="text-center pt-4">Ecriture</h4>
-                        <div class="d-flex justify-content-around py-5">
-                            <a href="" target="_blank" rel="noopener noreferrer" title="Facebook"><i
-                                    class="bi bi-facebook"></i></a>
-                            <a href="" target="_blank" rel="noopener noreferrer" title="Twitter"><i
-                                    class="bi bi-twitter"></i></a>
-                        </div>
-                    </article>
-                </div>
-
-            </div>
             </section>
 
         </div>
@@ -281,7 +342,7 @@
             <div class="row justify-content-around">
 
                 <div class="col-12 d-flex flex-column justify-content-center align-items-center py-3">
-                    <small>MORSCH Perrine © 2023</small> 
+                    <small>MORSCH Perrine © 2023</small>
                     <small>Tous droits réservés</small>
                 </div>
 

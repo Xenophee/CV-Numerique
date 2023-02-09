@@ -11,6 +11,7 @@ const hobbiesImg = document.querySelectorAll('.hobby');
 const programming = document.querySelector('.programmingHobby');
 const writting = document.querySelector('.writtingHobby');
 const games = document.querySelector('.gamesHobby');
+const textHobby = document.getElementById('textHobby');
 
 const journeyDescription = document.querySelectorAll('.journeyDescription');
 const stepJourney = document.getElementById('stepJourney');
@@ -46,6 +47,7 @@ const changeImg = (event) => {
         programming.src = './public/assets/img/programming2.png';
         writting.src = './public/assets/img/lecriture.png';
         games.src = './public/assets/img/jeu-video.png';
+        textHobby.textContent = 'Passionnée par le code depuis que j’en ai découvert les bases dans le développement web, j’aime explorer de nouvelles possibilités et découvrir de nouvelles techniques en autodidacte pour améliorer mon niveau dans ce domaine. Je me lance des défis de projet personnel pendant mes heures libres.';
 
         programming.classList.add('active');
         writting.classList.remove('active');
@@ -54,6 +56,7 @@ const changeImg = (event) => {
         programming.src = './public/assets/img/programming.png';
         writting.src = './public/assets/img/lecriture2.png';
         games.src = './public/assets/img/jeu-video.png';
+        textHobby.textContent = 'Après m’être consacré pas mal de temps à la lecture, j’ai eu envie de faire partie de ceux qui se trouvent derrière la plume. J’écris des fictions en prenant soin du style et en tentant de proposer des histoires originales que je partage ensuite sur internet.';
 
         programming.classList.remove('active');
         writting.classList.add('active');
@@ -62,6 +65,7 @@ const changeImg = (event) => {
         programming.src = './public/assets/img/programming.png';
         writting.src = './public/assets/img/lecriture.png';
         games.src = './public/assets/img/jeu-video2.png';
+        textHobby.textContent = 'J’aime jouer à des jeux vidéo de stratégie et de gestion dans mon temps libre ; cela me permet d’analyser les situations et de prendre des décisions adaptées en prenant plusieurs paramètres en compte pour atteindre des objectifs à long terme.';
 
         programming.classList.remove('active');
         writting.classList.remove('active');

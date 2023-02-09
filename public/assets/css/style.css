@@ -26,6 +26,44 @@ body {
     width: 10%;
 }
 
+
+/* ------------------------------------------------------------------------------------------------- */
+
+/* GENERAL */
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2.3rem;
+}
+
+h2, h3, h4 {
+    font-family: 'Pacifico', cursive;
+}
+
+a {
+    text-decoration: none;
+    color: #b2956a;
+}
+
+p {
+    text-align: justify;
+}
+
+li {
+    list-style: url('/public/assets/img/grande-fleur.png');
+}
+
+span {
+    font-weight: bold;
+}
+
+.bi {
+    font-size: 3rem;
+}
+
 main {
     margin-top: 15vh;
 }
@@ -40,20 +78,20 @@ main {
 #about, #hobbies {
     background-color: #121011;
     color: #b2956a;
-    border: #b2956a 5px dashed;
+    border: #b2956a 3px dotted;
     box-shadow: #121011 0px 8px 50px 0px, #121011 0px 2px 50px 0px;
 }
 
 #skills, #portfolio {
     background-color: #463120;
     color: #b2956a;
-    border: #b2956a 5px dashed;
+    border: #b2956a 3px dotted;
     box-shadow: #121011 0px 8px 50px 0px, #121011 0px 2px 50px 0px;
 }
 
 #journey, #contact {
     background-color: #b2956a;
-    border: #121011 5px dashed;
+    border: #121011 3px dotted;
     box-shadow: #121011 0px 8px 50px 0px, #121011 0px 2px 50px 0px;
 }
 
@@ -70,9 +108,38 @@ article {
 }
 
 
+/* ------------------------------------------------------------------------------------------------- */
+
+/* A PROPOS */
+
+.infoContact li {
+    list-style: none;
+}
+
+.infoContact a:hover {
+    color: #ddcaac;
+}
+
+.downloadCv {
+    border: #b2956a 2px dotted;
+    transition: 2s;
+}
+
+.downloadCv:hover {
+    background-color: #463120;
+    border: #b2956a 2px dotted;
+    color: #ddcaac;
+    transition: 1s;
+}
+
+.downloadCv a:hover {
+    color: #b2956a;
+}
+
+
+/* ------------------------------------------------------------------------------------------------- */
+
 /* COMPETENCES */
-
-
 
 .containerLanguages {
     position: relative;
@@ -140,6 +207,9 @@ article {
     transition: all 1s 0.3s ease-in-out;
 }
 
+
+/* ------------------------------------------------------------------------------------------------- */
+
 /* PARCOURS */
 
 .journeyDescription {
@@ -154,29 +224,50 @@ article {
 
 .form-range::-webkit-slider-thumb {
     background-color: #4d433a;
-    border-color: #ccac90;
-    border-width: 1px;
-    border-style: solid;
+    box-shadow: #4d433a 0 0 4px;
+    border: #ccac90 1px solid;
     height: 25px;
     width: 25px;
 }
 
-.form-range::-webkit-slider-thumb:active {
+.form-range::-moz-range-thumb {
+    background-color: #4d433a;
+    box-shadow: #4d433a 0 0 4px;
+    border: #ccac90 1px solid;
+    height: 25px;
+    width: 25px;
+}
+
+.form-range:active::-webkit-slider-thumb {
     background-color: #ccac90;
     box-shadow: #4d433a 0 0 0 2px;
 }
 
-.form-range::-webkit-slider-thumb:focus {
-    box-shadow: #4d433a 0 0 4px !important;
-    border-color: red;
+.form-range:active::-moz-range-thumb {
+    background-color: #ccac90;
+    box-shadow: #4d433a 0 0 0 2px;
+}
+
+.form-range:focus::-webkit-slider-thumb {
+    box-shadow: 0 0 0 1px #121011, 0 0 0 0.25rem rgba(131, 112, 78, 0.61);
+}
+
+.form-range:focus::-moz-range-thumb {
+    box-shadow: 0 0 0 1px #121011, 0 0 0 0.25rem rgba(131, 112, 78, 0.61);
 }
 
 .form-range::-webkit-slider-runnable-track {
-    border-color: #ccac90;
-    border-width: 1px;
-    border-style: solid;
+    background-color: #121011;
     height: 15px;
 }
+
+.form-range::-moz-range-track {
+    background-color: #121011;
+    height: 15px;
+}
+
+
+/* ------------------------------------------------------------------------------------------------- */
 
 /* HOBBIES */
 
@@ -200,6 +291,8 @@ input[type="image"] {
 }
 
 
+/* ------------------------------------------------------------------------------------------------- */
+
 /* RESEAUX SOCIAUX */
 
 #contact a {
@@ -208,30 +301,3 @@ input[type="image"] {
 
 
 
-/* GENERAL */
-
-
-h1 {
-    font-size: 3rem;
-}
-
-h2 {
-    font-size: 2.3rem;
-}
-
-h2, h3, h4 {
-    font-family: 'Pacifico', cursive;
-}
-
-a {
-    text-decoration: none;
-    color: #b2956a;
-}
-
-li {
-    list-style: url('/public/assets/img/grande-fleur.png');
-}
-
-.bi {
-    font-size: 3rem;
-}
