@@ -12,6 +12,7 @@ const programming = document.querySelector('.programmingHobby');
 const writting = document.querySelector('.writtingHobby');
 const games = document.querySelector('.gamesHobby');
 const textHobby = document.getElementById('textHobby');
+const titleHobby = document.querySelector('.titleHobby');
 
 const journeyDescription = document.querySelectorAll('.journeyDescription');
 const stepJourney = document.getElementById('stepJourney');
@@ -44,6 +45,7 @@ const btnLanguages = document.querySelector('.btnLanguages');
 // Fonction pour changer les icones de hobbies lorsqu'ils sont actif
 const changeImg = (event) => {
     if (event.target == programming) {
+        titleHobby.textContent = 'Code';
         programming.src = './public/assets/img/programming2.png';
         writting.src = './public/assets/img/lecriture.png';
         games.src = './public/assets/img/jeu-video.png';
@@ -53,6 +55,7 @@ const changeImg = (event) => {
         writting.classList.remove('active');
         games.classList.remove('active');
     } else if (event.target == writting) {
+        titleHobby.textContent = 'Ecriture';
         programming.src = './public/assets/img/programming.png';
         writting.src = './public/assets/img/lecriture2.png';
         games.src = './public/assets/img/jeu-video.png';
@@ -62,6 +65,7 @@ const changeImg = (event) => {
         writting.classList.add('active');
         games.classList.remove('active');
     } else {
+        titleHobby.textContent = 'Jeux vidéo';
         programming.src = './public/assets/img/programming.png';
         writting.src = './public/assets/img/lecriture.png';
         games.src = './public/assets/img/jeu-video2.png';
