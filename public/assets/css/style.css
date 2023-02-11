@@ -104,7 +104,7 @@ main {
     box-shadow: #121011 0px 8px 50px 0px, #121011 0px 2px 50px 0px;
 }
 
-#journey, #contact {
+#journey, #socialNetwork {
     background-color: #b2956a;
     border: #121011 3px dotted;
     box-shadow: #121011 0px 8px 50px 0px, #121011 0px 2px 50px 0px;
@@ -115,11 +115,6 @@ footer {
     color: #b2956a;
     border: #b2956a 2px dotted;
     box-shadow: #121011 0px 8px 50px 0px, #121011 0px 2px 50px 0px;
-}
-
-article {
-    border: #121011 3px dotted;
-    border-radius: 20px;
 }
 
 
@@ -133,6 +128,15 @@ article {
 
 .infoContact a:hover {
     color: #ddcaac;
+}
+
+.infoIcon, .socialNetworkIcon {
+    font-size: 3rem;
+}
+
+.contact {
+    padding: 0;
+    font-size: 1rem;
 }
 
 .downloadCv {
@@ -158,8 +162,8 @@ article {
 
 .containerLanguages {
     position: relative;
-    width: 300px;
-    height: 300px;
+    width: 280px;
+    height: 280px;
     background-color: #121011;
     background-image: url(../img/24652959_i759.jpg);
     background-size: 500px;
@@ -236,8 +240,12 @@ article {
     width: 80%;
 }
 
+.objectiveIcon {
+    font-size: 3.5rem;
+}
+
 .personnalityIcon {
-    width: 20%;
+    width: 25%;
     border: #b2956a 5px double;
     border-radius: 50%;
     background-color: #121011;
@@ -247,6 +255,7 @@ article {
 .personnalityIcon:hover {
     border: #121011 5px double;
     background-color: #b2956a;
+    box-shadow: none;
     animation: pulse 1.5s 1;
 }
 
@@ -255,7 +264,7 @@ article {
 /* PARCOURS */
 
 #journey {
-    height: 70vh;
+    min-height: 70vh;
 }
 
 .journeyDescription {
@@ -321,12 +330,9 @@ article {
 
 /* HOBBIES */
 
-.titleHobby {
-    transform: rotate(-90deg);
-}
 
 input[type="image"] {
-    width: 100%;
+    width: 28%;
     border: #463120 5px double;
     border-radius: 50%;
 }
@@ -349,10 +355,31 @@ input[type="image"] {
 
 /* RESEAUX SOCIAUX */
 
-#contact a {
+article {
+    border: #121011 3px dotted;
+    border-radius: 20px;
+}
+
+#socialNetwork a {
     color: #463120;
 }
 
+.writtingSite {
+    background-color: #463120;
+    transition: 1s;
+}
+
+.writtingSite a {
+    color: #b2956a !important;
+    font-size: 1.2rem;
+}
+
+.writtingSite:hover {
+    background-color: #121011;
+    transition: 1s;
+}
+
+/* ------------------------------------------------------------------------------------------------- */
 
 /* KEYFRAMES */
 
@@ -372,4 +399,49 @@ input[type="image"] {
 	100% {
 		box-shadow: 0 0 0 0 rgb(178, 149, 106, 0);
 	}
+}
+
+
+/* MEDIA QUERIES */
+
+
+@media screen and (min-width: 768px) {
+
+    .contact {
+        font-size: 1.3rem;
+    }
+
+    input[type="image"] {
+        width: 15%;
+    }
+
+    .personnalityIcon {
+        width: 35%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    
+    .containerLanguages {
+        position: relative;
+        width: 300px;
+        height: 300px;
+    }
+
+    .personnalityIcon {
+        width: 20%;
+    }
+
+    .titleHobby {
+        transform: rotate(-90deg);
+    }
+
+    input[type="image"] {
+        width: 100%;
+    }
+
+    article {
+        height: 23vh;
+    }
+    
 }

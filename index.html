@@ -7,11 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Playfair+Display&display=swap"
         rel="stylesheet">
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300&family=Pacifico&display=swap" rel="stylesheet"> -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./public/assets/bootstrap-icons-1.10.3/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./public/assets/css/style.css">
-    <link rel="stylesheet" href="./public/assets/css/flower.css">
     <title>CV Numérique - Morsch Perrine</title>
     <!-- https://getwaves.io/ -->
 </head>
@@ -38,7 +38,7 @@
                                 <a class="nav-link" href="#portfolio">Portfolio</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#contact">Contact</a>
+                                <a class="nav-link" href="#socialNetwork">Réseaux</a>
                             </li>
                         </ul>
                     </div>
@@ -60,32 +60,24 @@
 
             <!-- A PROPOS -->
             <section id="about" class="my-5">
-                <div class="row justify-content-around align-items-center">
+                <div class="row justify-content-around">
                     <h3 class="text-center my-5">A propos</h3>
                     <div class="col-12 col-lg-4">
-                        <div class="d-flex flex-column justify-content-center infoContact mt-5">
-                            <ul>
-                                <li class="mb-4"><a href="mailto: perrine.morsch@gmail.com"><i
-                                            class="bi bi-envelope me-3"></i>perrine.morsch@gmail.com</a></li>
-                                <li class="mb-4"><a href="tel:0658069354"><i
-                                            class="bi bi-phone me-3"></i>06.58.06.93.54</a></li>
-                                <li class="mb-4"><i class="bi bi-geo-alt-fill me-3"></i>Ville actuelle : Amiens</li>
+                        <div class="d-flex flex-column justify-content-center align-items-center infoContact mt-5">
+                            <ul class="contact">
+                                <li class="mb-5"><a href="mailto: perrine.morsch@gmail.com" class="d-flex"><i class="fa-regular fa-envelope infoIcon me-3"></i>perrine.morsch@gmail.com</a></li>
+                                <li class="mb-5"><a href="tel:0658069354" class="d-flex"><i class="fa-solid fa-mobile-screen infoIcon me-3"></i>06.58.06.93.54</a></li>
+                                <li class="d-flex mb-4"><i class="fa-sharp fa-solid fa-location-dot infoIcon me-3"></i>Ville actuelle : Amiens</li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-12 col-lg-5">
-                        <div class="mt-5">
-                            <p>Je suis une personne passionnée par les nouvelles technologies et les défis
-                                intellectuels. Après avoir obtenu mon diplôme en droit,
-                                j'ai décidé de poursuivre ma formation en programmation informatique pour combiner mes
-                                deux passions et devenir développeur.
-                                Je suis autodidacte et j'aime mettre mes compétences en pratique en développant des
-                                projets personnels. Je suis convaincu que ma formation
-                                en droit m'a donné une perspective unique sur les questions juridiques liées à la
-                                technologie, ce qui peut être un atout supplémentaire
-                                pour les employeurs. Je suis motivé et déterminé à développer mes compétences en tant
-                                que développeur et à faire une différence dans le
-                                monde de la technologie</p>
+                        <div class="px-4 mt-5">
+                            <p>Après un parcours juridique, j’ai décidé de me lancer dans le secteur de l’informatique
+                                par le biais du développement web et apporter ainsi
+                                ma contribution dans le monde de la technologie. C’est un secteur riche en possibilités,
+                                en constante transformation et qui offre des opportunités
+                                multiples d’évolutions.</p>
                         </div>
                         <div class="d-flex justify-content-center my-5">
                             <button type="button" class="btn downloadCv py-3 px-5 fs-5"><a href=""
@@ -97,13 +89,13 @@
 
             <!-- COMPETENCES -->
             <section id="skills" class="my-5">
-                <div class="row">
+                <div class="row justify-content-around">
                     <h3 class="text-center mt-5 mb-3">Compétences</h3>
 
-                    <div class="col-12 col-lg-4">
+                    <div class="col-12 col-md-4">
                         <div class="d-flex flex-column align-items-center justify-content-center my-5">
-                            <h4 class="pt-5">Outils</h4>
-                            <ul class="tools mt-5">
+                            <h4 class="pt-lg-5">Outils</h4>
+                            <ul class="tools mt-md-4 mt-lg-5">
                                 <li>Figma</li>
                                 <li>Visual Studio Code</li>
                                 <li>Git</li>
@@ -114,37 +106,43 @@
                         </div>
                     </div>
 
-                    <div class="col-12 col-lg-4">
-                        <div class="d-flex flex-column align-items-center justify-content-center my-5">
-                            <h4 class="mb-5">Langages</h4>
-                            <div class="containerLanguages mt-5">
+                    <div class="col-12 col-md-4">
+                        <div class="d-flex flex-column align-items-center justify-content-center my-lg-5">
+                            <h4 class="pt-md-5 pt-lg-0 mb-lg-5">Langages</h4>
+                            <div class="containerLanguages mt-5 mt-md-3">
                                 <div class="btnLanguages d-flex justify-content-center align-items-center">
-                                    <img src="./public/assets/img/code.png" class="iconLanguages" title="Cliquez ici pour découvrir ou fermer les langages" alt="icone code">
+                                    <img src="./public/assets/img/code.png" class="iconLanguages"
+                                        title="Cliquez ici pour découvrir ou fermer les langages" alt="icone code">
                                 </div>
 
                                 <div class="d-flex justify-content-center align-items-center languagesMenu html">
-                                    <img src="./public/assets/img/html-5.png" class="iconLanguages" title="HTML" alt="icone html">
+                                    <img src="./public/assets/img/html-5.png" class="iconLanguages" title="HTML"
+                                        alt="icone html">
                                 </div>
                                 <div class="d-flex justify-content-center align-items-center languagesMenu css">
-                                    <img src="./public/assets/img/css-3.png" class="iconLanguages" title="CSS" alt="icone css">
+                                    <img src="./public/assets/img/css-3.png" class="iconLanguages" title="CSS"
+                                        alt="icone css">
                                 </div>
                                 <div class="d-flex justify-content-center align-items-center languagesMenu js">
-                                    <img src="./public/assets/img/js.png" class="iconLanguages" title="Javascript" alt="icone js">
+                                    <img src="./public/assets/img/js.png" class="iconLanguages" title="Javascript"
+                                        alt="icone js">
                                 </div>
                                 <div class="d-flex justify-content-center align-items-center languagesMenu php">
-                                    <img src="./public/assets/img/php.png" class="iconLanguages" title="PHP" alt="icone php">
+                                    <img src="./public/assets/img/php.png" class="iconLanguages" title="PHP"
+                                        alt="icone php">
                                 </div>
                                 <div class="d-flex justify-content-center align-items-center languagesMenu sql">
-                                    <img src="./public/assets/img/mysql.png" class="iconLanguages" title="MySQL" alt="icone mysql">
+                                    <img src="./public/assets/img/mysql.png" class="iconLanguages" title="MySQL"
+                                        alt="icone mysql">
                                 </div>
                             </div>
                         </div>
                     </div>
 
                     <div class="col-12 col-lg-4">
-                        <div class="d-flex flex-column align-items-center justify-content-center my-5 me-3">
-                            <h4 class="pt-5">Autres</h4>
-                            <ul class="others mt-5">
+                        <div class="d-flex flex-column align-items-center justify-content-center my-5 me-lg-3 mx-3 mx-lg-0">
+                            <h4 class="pt-3 pt-lg-5">Autres</h4>
+                            <ul class="others mt-4 mt-lg-5">
                                 <li><span>Framework</span> : Bootstrap</li>
                                 <li><span>CMS</span> : Wordpress</li>
                                 <li><span>Systèmes</span> : Windows, Linux</li>
@@ -158,19 +156,25 @@
 
                 <div class="row justify-content-center">
                     <hr>
-                    <div class="d-flex flex-column align-items-center justify-content-center px-5 my-5">
-                        <h4>Objectifs 2023</h4>
-                        <p class="text-center mt-4">Maitriser de nouveaux frameworks tels que Node.js, Laravel ou
-                            Symfony pour le Back-End, Tailwind CSS pour le Front-End, mais encore Electron JS et React
-                            Native.</p>
+                    <h4 class="text-center mt-4 mb-5">Objectifs 2023-2024</h4>
+                    <div class="col-12 col-lg-5 d-flex flex-column flex-md-row justify-content-evenly align-items-center mb-5">
+                        <h5><span>Langages :</span></h5>
+                        <i class="fa-brands fa-java objectiveIcon my-3 my-lg-0" title="Java"></i>
+                        <i class="fa-brands fa-python objectiveIcon" title="Python"></i>
+                    </div>
+                    <div class="col-12 col-lg-5 d-flex flex-column flex-md-row justify-content-evenly align-items-center mb-5">
+                        <h5><span>Frameworks :</span></h5>
+                        <i class="fa-brands fa-symfony objectiveIcon my-3 my-lg-0" title="Symfony"></i>
+                        <i class="fa-brands fa-node objectiveIcon mb-3 mb-lg-0" title="Node.js"></i>
+                        <i class="fa-brands fa-react objectiveIcon" title="React / React Native"></i>
                     </div>
                 </div>
 
                 <div class="row justify-content-center">
                     <hr>
-                    <div class="d-flex flex-column align-items-center justify-content-center my-5">
-                        <h4>Savoir-être</h4>
-                        <div class="d-flex justify-content-evenly mt-5">
+                    <div class="col d-flex flex-column align-items-center justify-content-center">
+                        <h4 class="mt-4">Savoir-être</h4>
+                        <div class="d-flex flex-column flex-md-row justify-content-evenly mt-4 mb-5">
                             <div class="d-flex flex-column align-items-center">
                                 <img src="./public/assets/img/question.png" class="img-fluid personnalityIcon" alt="">
                                 <small>Curiosité</small>
@@ -180,7 +184,8 @@
                                 <small>Persévérance</small>
                             </div>
                             <div class="d-flex flex-column align-items-center">
-                                <img src="./public/assets/img/homme-de-genie.png" class="img-fluid personnalityIcon" alt="">
+                                <img src="./public/assets/img/homme-de-genie.png" class="img-fluid personnalityIcon"
+                                    alt="">
                                 <small>Rigueur</small>
                             </div>
                         </div>
@@ -327,12 +332,13 @@
             <section id="portfolio" class="my-5">
                 <div class="row">
                     <div class="col">
-                        <h3 class="text-center mt-5">Portfolio</h3>
+                        <h3 class="text-center my-5">Portfolio</h3>
+                        <div>Chifoumi, landing page, wordpress dino, wordpress marché de noel</div>
                     </div>
                 </div>
             </section>
 
-            <section id="contact" class="my-5">
+            <section id="socialNetwork" class="my-5">
                 <div class="row justify-content-around">
                     <h3 class="text-center mt-5">Réseaux sociaux</h3>
 
@@ -342,9 +348,8 @@
                             <h4 class="text-center pt-4">Développement</h4>
                             <div class="d-flex justify-content-around py-5">
                                 <a href="https://github.com/Xenophee" target="_blank" rel="noopener noreferrer"
-                                    title="Github"><i class="bi bi-github"></i></a>
-                                <a href="" target="_blank" rel="noopener noreferrer" title="Linkedin"><i
-                                        class="bi bi-linkedin"></i></a>
+                                    title="Github"><i class="fa-brands fa-github socialNetworkIcon"></i></a>
+                                <a href="" target="_blank" rel="noopener noreferrer" title="Linkedin"><i class="fa-brands fa-linkedin socialNetworkIcon"></i></a>
                             </div>
                         </article>
                     </div>
@@ -352,14 +357,17 @@
                     <!-- ECRITURE -->
                     <div class="col-12 col-lg-4">
                         <article class="shadow-lg mx-4 mt-lg-5 mb-4 mb-lg-5">
+                            <p class="mt-2 mx-4">En attendant la finalisation de mon site personnel, vous pouvez retrouver certains de mes écrits ici :
+                                <button type="button" class="btn writtingSite px-5 py-2 ms-2"><a href="https://www.atelierdesauteurs.com/author/420921051/xenophee" target="_blank" rel="noopener noreferrer">Consulter</a></button>
+                            </p>
+                        </article>
+                        <!-- <article class="shadow-lg mx-4 mt-lg-5 mb-4 mb-lg-5">
                             <h4 class="text-center pt-4">Ecriture</h4>
                             <div class="d-flex justify-content-around py-5">
-                                <a href="" target="_blank" rel="noopener noreferrer" title="Facebook"><i
-                                        class="bi bi-facebook"></i></a>
-                                <a href="" target="_blank" rel="noopener noreferrer" title="Twitter"><i
-                                        class="bi bi-twitter"></i></a>
+                                <a href="" target="_blank" rel="noopener noreferrer" title="Facebook"><i class="fa-brands fa-facebook socialNetworkIcon"></i></a>
+                                <a href="" target="_blank" rel="noopener noreferrer" title="Twitter"><i class="fa-brands fa-twitter socialNetworkIcon"></i></a>
                             </div>
-                        </article>
+                        </article> -->
                     </div>
 
                 </div>
