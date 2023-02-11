@@ -5,6 +5,8 @@ const hobbies = document.getElementById('hobbies');
 const portfolio = document.getElementById('portfolio');
 const contact = document.getElementById('contact');
 
+const personnalityIcon = document.querySelectorAll('.personnalityIcon');
+
 // SELECTION DES HOBBIES
 
 const hobbiesImg = document.querySelectorAll('.hobby');
@@ -19,7 +21,6 @@ const stepJourney = document.getElementById('stepJourney');
 
 const containerLanguages = document.querySelector('.containerLanguages');
 const btnLanguages = document.querySelector('.btnLanguages');
-
 
 // const scrollDisplayAnimation = (event) => {
 
@@ -39,11 +40,31 @@ const btnLanguages = document.querySelector('.btnLanguages');
 //     });
 // }
 
+const changeImgIn = (event) => {
 
+    if (event.target == personnalityIcon[0]) {
+        event.target.src = './public/assets/img/question2.png';
+    } else if (event.target == personnalityIcon[1]) {
+        event.target.src = './public/assets/img/montagne2.png';
+    } else {
+        event.target.src = './public/assets/img/homme-de-genie2.png';
+    }
+}
+
+const changeImgOut = (event) => {
+
+    if (event.target == personnalityIcon[0]) {
+        event.target.src = './public/assets/img/question.png';
+    } else if (event.target == personnalityIcon[1]) {
+        event.target.src = './public/assets/img/montagne.png';
+    } else {
+        event.target.src = './public/assets/img/homme-de-genie.png';
+    }
+}
 
 
 // Fonction pour changer les icones de hobbies lorsqu'ils sont actif
-const changeImg = (event) => {
+const changeHobby = (event) => {
     if (event.target == programming) {
         titleHobby.textContent = 'Code';
         programming.src = './public/assets/img/programming2.png';
@@ -138,10 +159,18 @@ stepChange = () => {
 
 btnLanguages.addEventListener('click', () => {
     containerLanguages.classList.toggle('active');
-})
+});
+
+personnalityIcon.forEach(element => {
+    element.addEventListener('mouseover', changeImgIn);
+});
+
+personnalityIcon.forEach(element => {
+    element.addEventListener('mouseout', changeImgOut);
+});
 
 hobbiesImg.forEach(element => {
-    element.addEventListener('click', changeImg);
+    element.addEventListener('click', changeHobby);
 });
 
 stepJourney.addEventListener('input', stepChange);
