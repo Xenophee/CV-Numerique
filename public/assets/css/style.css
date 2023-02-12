@@ -81,6 +81,7 @@ span {
 
 main {
     margin-top: 15vh;
+    
 }
 
 .nameSection {
@@ -99,8 +100,8 @@ main {
 
 #skills, #portfolio {
     background-color: #463120;
-    background-color: transparent;
-    backdrop-filter: blur(3px);
+    /* background-color: transparent;
+    backdrop-filter: blur(3px); */
     color: #b2956a;
     border: #b2956a 3px dotted;
     box-shadow: #121011 0px 8px 50px 0px, #121011 0px 2px 50px 0px;
@@ -266,14 +267,14 @@ footer {
 /* PARCOURS */
 
 #journey {
-    min-height: 70vh;
+    min-height: 80vh;
 }
 
 .journeyDescription {
     background-color: #121011;
     color: #b2956a;
     width: 80%;
-    height: 40vh;
+    height: 50vh;
     overflow-y: scroll;
     scrollbar-color: #4d433a #121011;
     scrollbar-width: thin;
@@ -358,18 +359,27 @@ input[type="image"] {
 /* PORTFOLIO */
 
 .card {
-    width: 80%;
+    width: 90%;
     background-color: #121011;
     border: #b2956a 2px dotted;
 }
 
+.card img {
+    height: 45vh;
+    object-fit: cover;
+}
+
+.card-body {
+    height: 55%;
+}
+
 .badgeSection {
-    width: 50%;
+    width: 100%;
 }
 
 .badge {
     background-color:#463120;
-    color: #b2956a;
+    color: #ddcaac;
 }
 
 .card a {
@@ -452,6 +462,7 @@ article {
     .personnalityIcon {
         width: 35%;
     }
+    
 }
 
 @media screen and (min-width: 992px) {
@@ -472,6 +483,20 @@ article {
 
     input[type="image"] {
         width: 100%;
+    }
+
+    .card {
+        width: 80%;
+        height: 75vh;
+    }
+
+    .card img {
+        height: 45%;
+        object-fit: cover;
+    }
+    
+    .card-body {
+        height: 55%;
     }
 
     article {

@@ -54,13 +54,13 @@
             <div class="row">
                 <div class="col nameSection py-5">
                     <h1 class="text-center mb-4">MORSCH Perrine</h1>
-                    <h2 class="text-center">Developpeur Web</h2>
+                    <h2 class="text-center">Developpeur Web Junior</h2>
                 </div>
             </div>
 
             <!-- A PROPOS -->
             <section id="about" class="my-5">
-                <div class="row justify-content-around">
+                <div class="row justify-content-around align-items-center">
                     <h3 class="text-center my-5">A propos</h3>
                     <div class="col-12 col-lg-4">
                         <div class="d-flex flex-column justify-content-center align-items-center infoContact mt-5">
@@ -74,20 +74,27 @@
                                         class="fa-sharp fa-solid fa-location-dot infoIcon me-3"></i>Ville actuelle :
                                     Amiens</li>
                             </ul>
+                            <div class="my-5">
+                                <button type="button" class="btn downloadCv py-3 px-5 fs-5"><a href="./public/assets/download/cv-morsch-perrine.pdf" target="_blank" rel="noopener noreferrer">Télécharger mon CV</a></button>
+                            </div>
                         </div>
                     </div>
                     <div class="col-12 col-lg-5">
-                        <div class="px-4 mt-5">
+                        <div class="px-4 my-5">
                             <p>Après un parcours juridique, j’ai décidé de me lancer dans le secteur de l’informatique
                                 par le biais du développement web et apporter ainsi
                                 ma contribution dans le monde de la technologie. C’est un secteur riche en possibilités,
                                 en constante transformation et qui offre des opportunités
-                                multiples d’évolutions. /!\PARLER D'ALTERNANCE/!\</p>
+                                multiples d’évolutions.</p>
+                            <p>En vue de monter en compétence dans ce domaine, je cherche actuellement une entreprise
+                                pour réaliser une alternance en prévision de septembre / octobre afin d’obtenir le titre
+                                de Concepteur / Développeur d’applications. </p>
                         </div>
-                        <div class="d-flex justify-content-center my-5">
-                            <button type="button" class="btn downloadCv py-3 px-5 fs-5"><a href=""
-                                    download="./public/assets/img/html.png">Télécharger mon CV</a></button>
-                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        
                     </div>
                 </div>
             </section>
@@ -184,16 +191,16 @@
                         <h4 class="mt-4">Savoir-être</h4>
                         <div class="d-flex flex-column flex-md-row justify-content-evenly mt-4 mb-5">
                             <div class="d-flex flex-column align-items-center">
-                                <img src="./public/assets/img/question.png" class="img-fluid personnalityIcon" alt="">
+                                <img src="./public/assets/img/question.png" class="img-fluid personnalityIcon" alt="Icone représentant la curiosité">
                                 <small>Curiosité</small>
                             </div>
                             <div class="d-flex flex-column align-items-center">
-                                <img src="./public/assets/img/montagne.png" class="img-fluid personnalityIcon" alt="">
+                                <img src="./public/assets/img/montagne.png" class="img-fluid personnalityIcon" alt="Icone représentant la persévérance">
                                 <small>Persévérance</small>
                             </div>
                             <div class="d-flex flex-column align-items-center">
                                 <img src="./public/assets/img/homme-de-genie.png" class="img-fluid personnalityIcon"
-                                    alt="">
+                                    alt="Icone représentant la rigueur">
                                 <small>Rigueur</small>
                             </div>
                         </div>
@@ -315,10 +322,10 @@
                     <div class="col-12 col-lg-1">
                         <div class="d-flex flex-lg-column justify-content-around">
                             <input type="image" src="./public/assets/img/programming2.png"
-                                class="programmingHobby hobby active my-4" value= />
-                            <input type="image" src="./public/assets/img/lecriture.png" class="writtingHobby hobby my-4"
+                                class="programmingHobby hobby active my-4" alt="Icone représentant la programmation informatique" value= />
+                            <input type="image" src="./public/assets/img/lecriture.png" alt="Icone représentant l'écriture" class="writtingHobby hobby my-4"
                                 value= />
-                            <input type="image" src="./public/assets/img/jeu-video.png" class="gamesHobby hobby my-4"
+                            <input type="image" src="./public/assets/img/jeu-video.png" alt="Icone représentant les jeux vidéo" class="gamesHobby hobby my-4"
                                 value= />
                         </div>
                     </div>
@@ -338,24 +345,77 @@
 
             <!-- PORTFOLIO -->
             <section id="portfolio" class="my-5">
-                <div class="row">
+                <div class="row align-items-stretch">
                     <h3 class="text-center my-5">Portfolio</h3>
-                    <div class="col-12">
-                        <div>Chifoumi, landing page, wordpress dino, wordpress marché de noel</div>
+                    <div class="col-12 col-lg-6 d-flex justify-content-center">
+                        <div class="card my-4">
+                            <img src="./public/assets/img/portfolio/chifoumi.PNG" class="card-img-top" alt="...">
+                            <div class="card-body d-flex flex-column justify-content-between align-items-center text-center">
+                                <h4 class="card-title mb-4">Chifoumi</h4>
+                                <p class="card-text">Mini jeu reprenant le principe du Chifoumi, mais basé sur un thème de Fantasy absurde inventé.</p>
+                                <div class="row justify-content-evenly badgeSection mb-4">
+                                    <span class="col-12 col-md-3 me-md-2 mb-3 badge">HTML</span>
+                                    <span class="col-12 col-md-3 me-md-2 mb-3 badge">CSS</span>
+                                    <span class="col-12 col-md-3 me-md-2 mb-3 badge">JS</span>
+                                </div>
+                                <a href="https://xenophee.github.io/Les-Honteux-de-Barbegarde--Chifoumi/"
+                                    class="btn btnCard fs-5 px-5 py-2" target="_blank" rel="noopener noreferrer">Voir le
+                                    site</a>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-12 col-lg-6 d-flex justify-content-center">
                         <div class="card my-4">
-                            <img src="..." class="card-img-top" alt="...">
-                            <div class="card-body d-flex flex-column align-items-center">
-                                <h4 class="card-title mb-4">Chifoumi</h4>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
-                                <div class="d-flex justify-content-evenly badgeSection mb-4">
-                                    <span class="badge">HTML</span>
-                                    <span class="badge">CSS</span>
-                                    <span class="badge">JS</span>
+                            <img src="./public/assets/img/portfolio/landing-page.PNG" class="card-img-top" alt="...">
+                            <div class="card-body d-flex flex-column justify-content-between align-items-center text-center">
+                                <h4 class="card-title mb-4">Landing-Page</h4>
+                                <p class="card-text">Exercice de landing Page réalisée pour une association fictive proposant des parcours d'observations ornithologiques.</p>
+                                <div class="row justify-content-evenly badgeSection mb-4">
+                                    <span class="col-12 col-md-3 me-md-2 mb-3 badge">HTML</span>
+                                    <span class="col-12 col-md-3 me-md-2 mb-3 badge">CSS</span>
+                                    <span class="col-12 col-md-3 me-md-2 mb-3 badge">JS</span>
+                                    <span class="col-12 col-md-3 me-md-2 mb-3 badge">Bootstrap</span>
                                 </div>
-                                <a href="https://xenophee.github.io/Les-Honteux-de-Barbegarde--Chifoumi/" class="btn btnCard fs-5 px-5 py-2" target="_blank" rel="noopener noreferrer">Voir le site</a>
+                                <a href="https://xenophee.github.io/Landing-Page-Oiseaux/"
+                                    class="btn btnCard fs-5 px-5 py-2" target="_blank" rel="noopener noreferrer">Voir le
+                                    site</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-6 d-flex justify-content-center">
+                        <div class="card my-4">
+                            <img src="./public/assets/img/portfolio/landing-page.PNG" class="card-img-top" alt="...">
+                            <div class="card-body d-flex flex-column justify-content-between align-items-center text-center">
+                                <h4 class="card-title mb-4">Site sur un Marché de Noël</h4>
+                                <p class="card-text">Réalisation d'un site fictif multilingue sur la présentation du Marché de Noël de Strasbourg.</p>
+                                <div class="row justify-content-evenly badgeSection mb-4">
+                                    <span class="col-12 col-md-3 me-md-2 mb-3 badge">Wordpress</span>
+                                    <span class="col-12 col-md-3 me-md-2 mb-3 badge">DIVI</span>
+                                    <span class="col-12 col-md-3 me-md-2 mb-3 badge">YOAST SEO</span>
+                                    <span class="col-12 col-md-3 me-md-2 mb-3 badge">Polylang</span>
+                                </div>
+                                <a href="https://xenophee.github.io/Landing-Page-Oiseaux/"
+                                    class="btn btnCard fs-5 px-5 py-2" target="_blank" rel="noopener noreferrer">Voir le
+                                    site</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 d-flex justify-content-center">
+                        <div class="card my-4">
+                            <img src="./public/assets/img/portfolio/landing-page.PNG" class="card-img-top" alt="...">
+                            <div class="card-body d-flex flex-column justify-content-between align-items-center text-center">
+                                <h4 class="card-title mb-4">Thème Wordpress</h4>
+                                <p class="card-text">Création d'un thème Wordpress sur une thématique autour de la paléontologie en utilisant les fonctions PHP natives au CMS.</p>
+                                <div class="row justify-content-evenly badgeSection mb-4">
+                                    <span class="col-12 col-md-3 me-md-2 mb-3 badge">Wordpress</span>
+                                    <span class="col-12 col-md-3 me-md-2 mb-3 badge">HTML</span>
+                                    <span class="col-12 col-md-3 me-md-2 mb-3 badge">CSS</span>
+                                    <span class="col-12 col-md-3 me-md-2 mb-3 badge">PHP</span>
+                                </div>
+                                <a href="https://xenophee.github.io/Landing-Page-Oiseaux/"
+                                    class="btn btnCard fs-5 px-5 py-2" target="_blank" rel="noopener noreferrer">Voir le
+                                    site</a>
                             </div>
                         </div>
                     </div>
