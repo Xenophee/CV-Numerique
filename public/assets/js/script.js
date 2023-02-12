@@ -1,3 +1,6 @@
+
+const sectionSelect = document.querySelectorAll('section');
+
 const about = document.getElementById('about');
 const skills = document.getElementById('skills');
 const journey = document.getElementById('journey');
@@ -22,23 +25,24 @@ const stepJourney = document.getElementById('stepJourney');
 const containerLanguages = document.querySelector('.containerLanguages');
 const btnLanguages = document.querySelector('.btnLanguages');
 
-// const scrollDisplayAnimation = (event) => {
 
-//     allStuff.forEach(element => {
+const scrollDisplayAnimation = (event) => {
 
-//         const {scrollTop, clientHeight} = document.documentElement;
-//         const top = element.getBoundingClientRect().top;
+    sectionSelect.forEach(element => {
 
-//         if (scrollTop > (scrollTop + top) - clientHeight) {
+        const {scrollTop, clientHeight} = document.documentElement;
+        const top = element.getBoundingClientRect().top;
 
-//             if (!element.classList.contains('icones')) {
-//                 element.classList.add('action');
-//             } else {
-//                 element.classList.add('iconesAction');
-//             }
-//         }
-//     });
-// }
+        if (scrollTop > (scrollTop + top) - clientHeight) {
+
+            if (!element.classList.contains('right')) {
+                element.classList.add('action');
+            } else {
+                element.classList.add('iconesAction');
+            }
+        }
+    });
+}
 
 const changeImgIn = (event) => {
 

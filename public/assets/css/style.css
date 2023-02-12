@@ -382,17 +382,43 @@ input[type="image"] {
     color: #ddcaac;
 }
 
-.card a {
+.btnCard {
     background-color: #b2956a;
     color: #121011;
     transition: 1s;
 }
 
-.card a:hover {
+.btnCard:hover {
     background-color: #463120;
     color: #b2956a;
     transition: 1s;
 }
+
+.modal-content {
+    background-color: #121011;
+}
+
+.modal-header {
+    border-bottom: #463120 3px solid;
+}
+
+.modal-footer {
+    border-top: #463120 3px solid;
+}
+
+.btn-close {
+    background-color: #b2956a;
+    opacity: 1;
+    border-radius: 50%;
+}
+
+.carousel-caption p {
+    text-align: center !important;
+}
+
+/* .carousel-item {
+    width: 80%;
+} */
 
 
 /* ------------------------------------------------------------------------------------------------- */
