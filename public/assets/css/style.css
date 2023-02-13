@@ -413,13 +413,14 @@ input[type="image"] {
     border-radius: 50%;
 }
 
+.carousel-caption {
+    backdrop-filter: blur(5px);
+    background-color: #33312d60;
+}
+
 .carousel-caption p {
     text-align: center !important;
 }
-
-/* .carousel-item {
-    width: 80%;
-} */
 
 
 /* ------------------------------------------------------------------------------------------------- */
@@ -514,20 +515,20 @@ article {
 
     .card {
         width: 80%;
-        height: 80vh;
+        height: 90vh;
     }
 
     .card img {
-        height: 45%;
+        height: 40%;
         object-fit: cover;
     }
     
     .card-body {
-        height: 55%;
+        height: 60%;
     }
 
-    article {
-        height: 23vh;
-    }
+    /* article {
+        min-height: 27vh;
+    } */
     
 }
