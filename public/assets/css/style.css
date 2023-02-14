@@ -4,6 +4,7 @@ body {
     background-size: 500px;
     font-size: 1.3rem;
     line-height: 40px;
+    overflow-x: hidden;
 }
 
 .navbar {
@@ -85,21 +86,23 @@ main {
 }
 
 .nameSection {
-    backdrop-filter: blur(3px);
+    /* backdrop-filter: blur(3px); */
+    background-color: #121011b5;
     color: #b2956a;
     border: #b2956a 4px double;
     box-shadow: #121011 0px 8px 50px 0px, #121011 0px 2px 50px 0px;
 }
 
 #about, #hobbies {
-    background-color: #121011;
+    background-color: #121011b5;
     color: #b2956a;
     border: #b2956a 3px dotted;
     box-shadow: #121011 0px 8px 50px 0px, #121011 0px 2px 50px 0px;
 }
 
 #skills, #portfolio {
-    background-color: #463120;
+    /* background-color: #46312081; */
+    background-color: #121011b5;
     /* background-color: transparent;
     backdrop-filter: blur(3px); */
     color: #b2956a;
@@ -108,13 +111,16 @@ main {
 }
 
 #journey, #socialNetwork {
-    background-color: #b2956a;
-    border: #121011 3px dotted;
+    /* background-color: #b2956a; */
+    background-color: #121011b5;
+    color: #b2956a;
+    /* border: #121011 3px dotted; */
+    border: #b2956a 3px dotted;
     box-shadow: #121011 0px 8px 50px 0px, #121011 0px 2px 50px 0px;
 }
 
 footer {
-    background-color: #121011;
+    background-color: #121011b5;
     color: #b2956a;
     border: #b2956a 2px dotted;
     box-shadow: #121011 0px 8px 50px 0px, #121011 0px 2px 50px 0px;
@@ -144,18 +150,15 @@ footer {
 
 .downloadCv {
     border: #b2956a 2px dotted;
+    color: #b2956a;
     transition: 2s;
 }
 
 .downloadCv:hover {
-    background-color: #463120;
-    border: #b2956a 2px dotted;
-    color: #ddcaac;
+    background-color: #b2956a;
+    border: #121011 2px dotted;
+    color: #121011 !important;
     transition: 1s;
-}
-
-.downloadCv a:hover {
-    color: #b2956a;
 }
 
 
@@ -171,7 +174,6 @@ footer {
     background-image: url(../img/24652959_i759.jpg);
     background-size: 500px;
     border: #b2956a 2px dotted;
-    box-shadow: rgba(178, 149, 106, 0.25) 0px 30px 60px -12px inset, rgba(178, 149, 106, 0.3) 0px 18px 36px -18px inset;
     box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
     border-radius: 50%;
 }
@@ -272,6 +274,7 @@ footer {
 
 .journeyDescription {
     background-color: #121011;
+    /* border: #b2956a 1px dotted; */
     color: #b2956a;
     width: 80%;
     height: 50vh;
@@ -288,6 +291,7 @@ footer {
     background-color: #4d433a;
     box-shadow: #4d433a 0 0 4px;
     border: #ccac90 1px solid;
+    box-shadow: #121011 0px 8px 50px 0px, #121011 0px 2px 50px 0px;
     height: 25px;
     width: 25px;
 }
@@ -296,6 +300,7 @@ footer {
     background-color: #4d433a;
     box-shadow: #4d433a 0 0 4px;
     border: #ccac90 1px solid;
+    box-shadow: #121011 0px 8px 50px 0px, #121011 0px 2px 50px 0px;
     height: 25px;
     width: 25px;
 }
@@ -320,11 +325,13 @@ footer {
 
 .form-range::-webkit-slider-runnable-track {
     background-color: #121011;
+    background-color: #b2956a;
     height: 15px;
 }
 
 .form-range::-moz-range-track {
     background-color: #121011;
+    background-color: #b2956a;
     height: 15px;
 }
 
@@ -428,12 +435,12 @@ input[type="image"] {
 /* RESEAUX SOCIAUX */
 
 article {
-    border: #121011 3px dotted;
+    border: #b2956a 3px dotted;
     border-radius: 20px;
 }
 
 #socialNetwork a {
-    color: #463120;
+    color: #b2956a;
 }
 
 .writtingSite {
@@ -449,6 +456,29 @@ article {
 .writtingSite:hover {
     background-color: #121011;
     transition: 1s;
+}
+
+
+
+/* ANIMATION SCROLL */
+
+.leftSection {
+    transform: translate(-100%);
+    opacity: 0;
+    transition: transform 1.2s ease-in-out;
+    transition: opacity 1.2 ease-in-out;
+}
+
+.rightSection {
+    transform: translate(+100%);
+    opacity: 0;
+    transition: transform 1.2s ease-in-out;
+    transition: opacity 1.2 ease-in-out;
+}
+
+.action {
+    transform: none;
+    opacity: 1;
 }
 
 /* ------------------------------------------------------------------------------------------------- */
@@ -515,7 +545,7 @@ article {
 
     .card {
         width: 80%;
-        height: 90vh;
+        height: 100vh;
     }
 
     .card img {
@@ -526,9 +556,5 @@ article {
     .card-body {
         height: 60%;
     }
-
-    /* article {
-        min-height: 27vh;
-    } */
     
 }

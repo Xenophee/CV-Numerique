@@ -1,6 +1,8 @@
 
-const sectionSelect = document.querySelectorAll('section');
 
+
+// SELECTION DES SECTIONS
+const sectionSelect = document.querySelectorAll('section');
 const about = document.getElementById('about');
 const skills = document.getElementById('skills');
 const journey = document.getElementById('journey');
@@ -8,10 +10,13 @@ const hobbies = document.getElementById('hobbies');
 const portfolio = document.getElementById('portfolio');
 const contact = document.getElementById('contact');
 
+// SELECTION SUR LES LANGAGES
+const containerLanguages = document.querySelector('.containerLanguages');
+const btnLanguages = document.querySelector('.btnLanguages');
+
 const personnalityIcon = document.querySelectorAll('.personnalityIcon');
 
 // SELECTION DES HOBBIES
-
 const hobbiesImg = document.querySelectorAll('.hobby');
 const programming = document.querySelector('.programmingHobby');
 const writting = document.querySelector('.writtingHobby');
@@ -19,13 +24,13 @@ const games = document.querySelector('.gamesHobby');
 const textHobby = document.getElementById('textHobby');
 const titleHobby = document.querySelector('.titleHobby');
 
+// SELECTION SUR LE PARCOURS
 const journeyDescription = document.querySelectorAll('.journeyDescription');
 const stepJourney = document.getElementById('stepJourney');
 
-const containerLanguages = document.querySelector('.containerLanguages');
-const btnLanguages = document.querySelector('.btnLanguages');
 
 
+// FONCTION D'ANIMATION DES SECTIONS AU SCROLL AU PREMIER CHARGEMENT DE LA PAGE
 const scrollDisplayAnimation = (event) => {
 
     sectionSelect.forEach(element => {
@@ -35,15 +40,12 @@ const scrollDisplayAnimation = (event) => {
 
         if (scrollTop > (scrollTop + top) - clientHeight) {
 
-            if (!element.classList.contains('right')) {
-                element.classList.add('action');
-            } else {
-                element.classList.add('iconesAction');
-            }
+            element.classList.add('action');
         }
     });
 }
 
+// CHANGEMENT DE L'ICONE PERSONNALITY SUR LE OVER
 const changeImgIn = (event) => {
 
     if (event.target == personnalityIcon[0]) {
@@ -55,6 +57,7 @@ const changeImgIn = (event) => {
     }
 }
 
+// CHANGEMENT DE L'ICONE PERSONNALITY SUR LE OUT
 const changeImgOut = (event) => {
 
     if (event.target == personnalityIcon[0]) {
@@ -67,7 +70,7 @@ const changeImgOut = (event) => {
 }
 
 
-// Fonction pour changer les icones de hobbies lorsqu'ils sont actif
+// FONCTION CHANGEMENT DES ICONES HOBBIES QUAND ILS SONT ACTIFS
 const changeHobby = (event) => {
     if (event.target == programming) {
         titleHobby.textContent = 'Code';
@@ -102,6 +105,7 @@ const changeHobby = (event) => {
     }
 }
 
+// FONCTION QUI AFFICHE OU NON LE PARCOURS CONCERNE SELON L'ETAPE DE L'INPUT RANGE
 stepChange = () => {
     console.log(stepJourney.value);
 
@@ -158,8 +162,8 @@ stepChange = () => {
 
 
 
-
-// window.addEventListener('scroll', scrollDisplayAnimation);
+// DECLARATION DES EVENEMENTS
+window.addEventListener('scroll', scrollDisplayAnimation);
 
 btnLanguages.addEventListener('click', () => {
     containerLanguages.classList.toggle('active');
