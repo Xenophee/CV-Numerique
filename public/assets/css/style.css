@@ -40,6 +40,7 @@ body {
 ::-webkit-scrollbar-thumb {
     background-color: #4d433a;
     outline: 1px solid #4d433a;
+    border-right: #b2956a 1px dotted;
 }
 
 html {
@@ -85,44 +86,24 @@ main {
     
 }
 
-.nameSection {
-    /* backdrop-filter: blur(3px); */
-    background-color: #121011b5;
-    color: #b2956a;
-    border: #b2956a 4px double;
+.nameSection, footer {
+    background-color: #b2956a;
+    color: #121011;
+    border: #121011 20px double;
     box-shadow: #121011 0px 8px 50px 0px, #121011 0px 2px 50px 0px;
 }
 
-#about, #hobbies {
-    background-color: #121011b5;
+#about, #journey, #portfolio {
+    background-color: #121011bb;
     color: #b2956a;
     border: #b2956a 3px dotted;
     box-shadow: #121011 0px 8px 50px 0px, #121011 0px 2px 50px 0px;
 }
 
-#skills, #portfolio {
-    /* background-color: #46312081; */
-    background-color: #121011b5;
-    /* background-color: transparent;
-    backdrop-filter: blur(3px); */
+#skills, #socialNetwork, #hobbies {
+    background-color: #121011;
     color: #b2956a;
     border: #b2956a 3px dotted;
-    box-shadow: #121011 0px 8px 50px 0px, #121011 0px 2px 50px 0px;
-}
-
-#journey, #socialNetwork {
-    /* background-color: #b2956a; */
-    background-color: #121011b5;
-    color: #b2956a;
-    /* border: #121011 3px dotted; */
-    border: #b2956a 3px dotted;
-    box-shadow: #121011 0px 8px 50px 0px, #121011 0px 2px 50px 0px;
-}
-
-footer {
-    background-color: #121011b5;
-    color: #b2956a;
-    border: #b2956a 2px dotted;
     box-shadow: #121011 0px 8px 50px 0px, #121011 0px 2px 50px 0px;
 }
 
@@ -130,6 +111,11 @@ footer {
 /* ------------------------------------------------------------------------------------------------- */
 
 /* A PROPOS */
+
+.mainIcon {
+    width: 130px;
+    height: 130px;
+}
 
 .infoContact li {
     list-style: none;
@@ -198,7 +184,7 @@ footer {
     height: 80px;
     border-radius: 50%;
     background-color: #b2956a;
-    border: #121011 2px dotted;
+    border: #121011 3px double;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -250,7 +236,7 @@ footer {
 }
 
 .personnalityIcon {
-    width: 25%;
+    width: 100%;
     border: #b2956a 5px double;
     border-radius: 50%;
     background-color: #121011;
@@ -274,13 +260,14 @@ footer {
 
 .journeyDescription {
     background-color: #121011;
-    /* border: #b2956a 1px dotted; */
+    border: #b2956a 1px dotted;
     color: #b2956a;
     width: 80%;
     height: 50vh;
     overflow-y: scroll;
     scrollbar-color: #4d433a #121011;
     scrollbar-width: thin;
+    border-right: #b2956a 1px dotted;
 }
 
 .stepJourney {
@@ -444,13 +431,15 @@ article {
 }
 
 .writtingSite {
-    background-color: #463120;
+    background-color: #b2956a;
+    color: #121011 !important;
+    font-size: 1.2rem;
     transition: 1s;
 }
 
-.writtingSite a {
+.writtingSite:hover {
     color: #b2956a !important;
-    font-size: 1.2rem;
+    border: #b2956a 1px dotted;
 }
 
 .writtingSite:hover {
@@ -518,7 +507,7 @@ article {
     }
 
     .personnalityIcon {
-        width: 35%;
+        width: 70%;
     }
     
 }
@@ -532,7 +521,7 @@ article {
     }
 
     .personnalityIcon {
-        width: 20%;
+        width: 80%;
     }
 
     .titleHobby {
@@ -555,6 +544,17 @@ article {
     
     .card-body {
         height: 60%;
+    }
+    
+}
+
+
+@media screen and (min-width: 1200px) {
+    
+
+    .card {
+        width: 80%;
+        height: 85vh;
     }
     
 }
