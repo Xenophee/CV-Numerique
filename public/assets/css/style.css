@@ -235,8 +235,13 @@ main {
     font-size: 3.5rem;
 }
 
-.personnalityIcon {
+.personnalityField {
     width: 100%;
+}
+
+.personnalityIcon {
+    width: 100px;
+    height: 100px;
     border: #b2956a 5px double;
     border-radius: 50%;
     background-color: #121011;
@@ -505,10 +510,6 @@ article {
     input[type="image"] {
         width: 15%;
     }
-
-    .personnalityIcon {
-        width: 70%;
-    }
     
 }
 
@@ -518,10 +519,6 @@ article {
         position: relative;
         width: 300px;
         height: 300px;
-    }
-
-    .personnalityIcon {
-        width: 80%;
     }
 
     .titleHobby {
@@ -554,7 +551,7 @@ article {
 
     .card {
         width: 80%;
-        height: 85vh;
+        height: 100vh;
     }
     
 }
