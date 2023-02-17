@@ -86,7 +86,7 @@ main {
     
 }
 
-.nameSection, footer {
+.nameSection, .footer {
     background-color: #b2956a;
     color: #121011;
     border: #121011 20px double;

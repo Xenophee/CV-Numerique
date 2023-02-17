@@ -183,4 +183,3 @@ hobbiesImg.forEach(element => {
 
 stepJourney.addEventListener('input', stepChange);
 
-

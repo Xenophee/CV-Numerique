@@ -1,0 +1,80 @@
+body {
+    position: relative;
+}
+
+.mainIcon {
+    background-color: #121011;
+    border-radius: 50%;
+}
+
+section {
+    min-height: 25vh;
+    background-color: #121011bb;
+    color: #b2956a;
+    border: #b2956a 3px dotted;
+    box-shadow: #121011 0px 8px 50px 0px, #121011 0px 2px 50px 0px;
+}
+
+.portfolioImg {
+    transform: scale(1);
+    height: 80vh;
+    width: auto;
+    object-fit: cover;
+    cursor: pointer;
+    transition: 2s;
+    
+    /* padding: 7px; */
+    /* clip-path: ellipse(130px 140px at 10% 20%); */
+}
+
+.divImg {
+    /* border: #b2956a 7px double; */
+    padding: 7px;
+    background-color: #b2956a;
+    /* clip-path: circle(50% at 50% 50%); */
+}
+
+.portfolioImg.zoom {
+    width: 10%;
+    position: absolute;
+    z-index: 2;
+    /* transform: scale(0.1); */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    clip-path: none;
+}
+
+.zoom.transform {
+    width: 80%;
+    height: auto;
+    transform: scale(5);
+    transition: 2s;
+    /* top: 0%;
+    left: 0%; */
+    transform: translate(-50%, -50%);
+}
+
+
+@media screen and (min-width: 768px) {
+
+    .portfolioImg {
+        transform: scale(1);
+        height: 50vh;
+        width: 100%;
+        object-fit: cover;
+        }
+    
+}
+
+@media screen and (min-width: 1200px) {
+    
+
+    .portfolioImg {
+    transform: scale(1);
+    height: 40vh;
+    width: 100%;
+    object-fit: cover;
+    }
+    
+}
