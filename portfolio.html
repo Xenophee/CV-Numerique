@@ -5,13 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio de mes réalisations en développement web en utilisant les langages HTML / CSS / JS / PHP / MySQL, le framework Bootstrap et le CMS Wordpress.">
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Playfair+Display&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
         integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./public/assets/css/style.css">
+    <!-- <link rel="stylesheet" href="./public/assets/css/style.css"> -->
+    <link rel="stylesheet" href="./public/assets/css/general.css">
     <link rel="stylesheet" href="./public/assets/css/portfolio.css">
     <title>CV Numérique - Morsch Perrine - Portfolio</title>
 </head>
@@ -19,33 +21,11 @@
 <body>
 
     <header>
-        <div class="container-fluid">
-            <nav class="navbar navbar-expand-lg">
-                <div class="container-fluid">
-                    <a class="navbar-brand " href="./index.html">CV-Numérique</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav d-flex justify-content-evenly">
-                            <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="#about">A propos</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#skills">Compétences</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#portfolio">Portfolio</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#socialNetwork">Réseaux</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </div>
+        <nav>
+            <div class="d-flex justify-content-center mt-4">
+                <button type="button" class="btn" id="goBack" title="Revenir en haut de la page" aria-label="Back to CV"><a href="./index.html#portfolio"><i class="fa-solid fa-circle-left"></i></a></button>
+            </div>
+        </nav>
     </header>
 
     <main>
@@ -62,15 +42,25 @@
                 </div>
             </div>
 
-            <section class="my-5">
+
+            <!-- PORTFOLIO CHIFOUMI -->
+            <section class="my-5" id="chifoumi">
                 <div class="row">
-                    <h3 class="text-center my-5">Chifoumi</h3>
-                    <div class="col-12 col-md-6 col-lg-6">
-                        <div class="mx-1 ms-md-3 ms-lg-5 my-md-5 divImg">
-                            <img src="./public/assets/img/portfolio/chifoumi.PNG" class="img-fluid portfolioImg" alt="">
+                    <div class="col">
+                        <div class="ruban my-5">
+                            <h3 class="text-center my-5">Chifoumi</h3>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-6 d-flex align-items-center">
+                </div>
+
+                <div class="row presentationSection justify-content-around align-items-center my-4">
+                    <div class="col-12 col-lg-6">
+                        <div class="mx-2 ms-lg-5 mb-md-3 mb-lg-0 divImg divLeftImg">
+                            <img src="./public/assets/img/portfolio/chifoumi1.png"
+                                class="img-fluid portfolioImg leftImg" alt="page d'accueil du chifoumi">
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 d-flex flex-column align-items-center">
                         <div class="mt-3 mt-md-0 mx-3 me-lg-5">
                             <p>Mini jeu réalisé en trois jours reprenant le principe du Chifoumi, mais basé sur un thème
                                 de Fantasy absurde inventé.</p>
@@ -79,30 +69,379 @@
                                 Une amélioration de l'UX est également à l'étude.
                             </p>
                         </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div
-                        class="col-12 col-md-6 d-flex flex-column justify-content-center align-items-center order-2 order-md-1">
-                        <div class="row justify-content-evenly badgeSection my-4 mt-lg-0 mb-lg-5">
-                            <span class="col-10 col-md-3 me-md-2 mb-3 badge">HTML</span>
-                            <span class="col-10 col-md-3 me-md-2 mb-3 badge">CSS</span>
-                            <span class="col-10 col-md-3 me-md-2 mb-3 badge">Javascript</span>
+                        <div class="row justify-content-evenly badgeSection my-4 my-lg-3">
+                            <span class="col-7 col-md-3 me-md-2 mb-3 badge">HTML</span>
+                            <span class="col-7 col-md-3 me-md-2 mb-3 badge">CSS</span>
+                            <span class="col-7 col-md-3 me-md-2 mb-3 badge">Javascript</span>
                         </div>
-                        <div class="mx-3 mb-4 mb-lg-5">
+                        <div class="mx-3 mb-4 mb-lg-4">
                             <p>Utilisation des Media Queries pour le Responsive Design.</p>
                         </div>
-                        <div class="mb-4">
-                            <a href="https://xenophee.github.io/Les-Honteux-de-Barbegarde--Chifoumi/"
-                                class="btn btnCard fs-5 px-5 py-2" target="_blank" rel="noopener noreferrer">Voir le
-                                site</a>
+                        <div class="d-flex flex-column flex-md-row justify-content-around divBtn mb-lg-4">
+                            <div class="d-flex justify-content-center mb-4 mb-md-0">
+                                <button type="button" class="btn btnGallery btnLook fs-5 px-2 px-md-4 py-2"><i
+                                        class="fa-solid fa-eye me-3"></i>Consulter la galerie</button>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <a href="https://xenophee.github.io/Les-Honteux-de-Barbegarde--Chifoumi/"
+                                    class="btn btnOpenSite fs-5 px-4 py-2" target="_blank" rel="noopener noreferrer"><i
+                                        class="fa-solid fa-person-walking-dashed-line-arrow-right me-3"></i>Accéder au
+                                    site</a>
+                            </div>
                         </div>
                     </div>
+                </div>
 
-                    <div class="col-12 col-md-6 order-1 order-md-2">
-                        <div class="mx-1 me-lg-5 my-md-5">
-                            <img src="./public/assets/img/portfolio/chifoumi 2.png" class="img-fluid portfolioImg"
-                                alt="">
+                <div class="row gallerySection my-4 d-none">
+                    <div class="col">
+                        <div class="row justify-content-around mx-2 mx-md-5">
+                            <div class="col-12 col-md-6 col-xl-3">
+                                <img src="./public/assets/img/portfolio/chifoumi1.png" class="img-fluid galleryImg mb-3"
+                                    alt="page du jeu non lancé">
+                                    <p class="text-center">Jeu non lancé</p>
+                            </div>
+                            <div class="col-12 col-md-6 col-xl-3">
+                                <img src="./public/assets/img/portfolio/chifoumi2.png" class="img-fluid galleryImg mb-3"
+                                    alt="page du jeu lancé">
+                                    <p class="text-center">Jeu lancé</p>
+                            </div>
+                            <div class="col-12 col-md-6 col-xl-3">
+                                <img src="./public/assets/img/portfolio/chifoumi4.png" class="img-fluid galleryImg mb-3"
+                                    alt="page de LORE">
+                                    <p class="text-center">Page LORE</p>
+                            </div>
+                            <div class="col-12 col-md-6 col-xl-3">
+                                <img src="./public/assets/img/portfolio/chifoumi3.png" class="img-fluid galleryImg mb-3"
+                                    alt="page de jeu terminé">
+                                    <p class="text-center">Jeu terminé - Victoire</p>
+                            </div>
+                            <div class="col-12 mt-5">
+                                <div class="d-flex justify-content-center divBtn">
+                                    <button type="button" class="btn btnGallery btnBack fs-5 px-4 py-2"><i
+                                            class="fa-solid fa-arrow-left-long me-3"></i>Quitter la galerie</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- PORTFOLIO LANDING PAGE OISEAUX -->
+            <section class="my-5" id="landing">
+                <div class="row">
+                    <div class="col">
+                        <div class="ruban my-5">
+                            <h3 class="text-center my-5">Landing-Page</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row presentationSection justify-content-around align-items-center my-4">
+                    <div class="col-12 col-lg-6 d-flex flex-column align-items-center order-2 order-lg-1">
+                        <div class="mt-3 mt-md-0 mx-3 ms-lg-5">
+                            <p>Projet personnel de Landing Page réalisée pour une association fictive
+                                proposant des parcours d'observations ornithologiques.</p>
+                            <p>Une refonte de la vidéo d'en-tête est prévue prochainement afin de la réajuster sur les
+                                différents supports et d'en réduire le poids. Quelques ajustements graphiques sont
+                                également programmés.
+                            </p>
+                        </div>
+                        <div class="row justify-content-evenly badgeSection my-4 my-lg-3">
+                            <span class="col-7 col-md-3 me-md-2 mb-3 badge">HTML</span>
+                            <span class="col-7 col-md-3 me-md-2 mb-3 badge">CSS</span>
+                            <span class="col-7 col-md-3 me-md-2 mb-3 badge">Javascript</span>
+                            <span class="col-7 col-md-3 me-md-2 mb-3 badge">Bootstrap</span>
+                        </div>
+                        <div class="mx-3 mb-4 mb-lg-4">
+                            <p>Utilisation de la grille Bootstrap pour le Responsive Design.</p>
+                        </div>
+                        <div class="d-flex flex-column flex-md-row justify-content-around divBtn mb-lg-4">
+                            <div class="d-flex justify-content-center mb-4 mb-md-0">
+                                <button type="button" class="btn btnGallery btnLook fs-5 px-2 px-md-4 py-2"><i
+                                        class="fa-solid fa-eye me-3"></i>Consulter la galerie</button>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <a href="https://xenophee.github.io/Landing-Page-Oiseaux/"
+                                    class="btn btnOpenSite fs-5 px-4 py-2" target="_blank" rel="noopener noreferrer"><i
+                                        class="fa-solid fa-person-walking-dashed-line-arrow-right me-3"></i>Accéder au
+                                    site</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 oder-1 order-lg-2">
+                        <div class="mx-2 me-lg-5 mb-md-3 mb-lg-0 divImg divRightImg">
+                            <img src="./public/assets/img/portfolio/landingpage.PNG"
+                                class="img-fluid portfolioImg rightImg" alt="page du site landing-page">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row gallerySection my-4 d-none">
+                    <div class="col">
+                        <div class="row justify-content-around mx-2 mx-md-5">
+                            <div class="col-12 col-md-6 col-xl-3">
+                                <img src="./public/assets/img/portfolio/landingpage.png" class="img-fluid galleryImg mb-3"
+                                    alt="page du site en version desktop">
+                                    <p class="text-center">Version Desktop</p>
+                            </div>
+                            <div class="col-12 col-md-6 col-xl-3">
+                                <img src="./public/assets/img/portfolio/landingpage-responsive.png" class="img-fluid galleryImg mb-3"
+                                    alt="page du site en version mobile">
+                                    <p class="text-center">Version mobile</p>
+                            </div>
+                            <div class="col-12 mt-5">
+                                <div class="d-flex justify-content-center divBtn">
+                                    <button type="button" class="btn btnGallery btnBack fs-5 px-4 py-2"><i
+                                            class="fa-solid fa-arrow-left-long me-3"></i>Quitter la galerie</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- PORTFOLIO AGREGATEUR -->
+            <section class="my-5" id="chifoumi">
+                <div class="row">
+                    <div class="col">
+                        <div class="ruban my-5">
+                            <h3 class="text-center my-5">Agrégateur de contenu</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row presentationSection justify-content-around align-items-center my-4">
+                    <div class="col-12 col-lg-6">
+                        <div class="mx-2 ms-lg-5 mb-md-3 mb-lg-0 divImg divLeftImg">
+                            <img src="./public/assets/img/portfolio/rss.png" class="img-fluid portfolioImg leftImg"
+                                alt="page d'accueil de l'agrégateur de contenu">
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 d-flex flex-column align-items-center">
+                        <div class="mt-3 mt-md-0 mx-3 me-lg-5">
+                            <p>Réalisation d'un site qui regroupe des contenus provenant de flux
+                                RSS sur le thème des jeux vidéos. Travail en équipe de trois sur une restriction de
+                                trois jours.</p>
+                            <p>Grâce à un formulaire, l'utilisateur pouvait choisir l'affichage des sujets et le nombre
+                                d'articles ainsi que le thème de couleur du site.</p>
+                        </div>
+                        <div class="row justify-content-evenly badgeSection my-4 my-lg-3">
+                            <span class="col-7 col-md-3 me-md-2 mb-3 badge">HTML</span>
+                            <span class="col-7 col-md-3 me-md-2 mb-3 badge">CSS</span>
+                            <span class="col-7 col-md-3 me-md-2 mb-3 badge">PHP</span>
+                            <span class="col-7 col-md-3 me-md-2 mb-3 badge">XML</span>
+                            <span class="col-7 col-md-3 me-md-2 mb-3 badge">Bootstrap</span>
+                        </div>
+                        <div class="mx-3 mb-4 mb-lg-4">
+                            <p>Utilisation de la grille Bootstrap pour le Responsive Design.</p>
+                        </div>
+                        <div class="d-flex flex-column flex-md-row justify-content-around divBtn mb-lg-4">
+                            <div class="d-flex justify-content-center mb-4 mb-md-0">
+                                <button type="button" class="btn btnGallery btnLook fs-5 px-2 px-md-4 py-2"><i
+                                        class="fa-solid fa-eye me-3"></i>Consulter la galerie</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row gallerySection my-4 d-none">
+                    <div class="col">
+                        <div class="row justify-content-around mx-2 mx-md-5">
+                            <div class="col-12 col-md-6 col-xl-3">
+                                <img src="./public/assets/img/portfolio/rss.png" class="img-fluid galleryImg mb-3"
+                                    alt="page d'accueil">
+                                    <p class="text-center">Accueil</p>
+                            </div>
+                            <div class="col-12 col-md-6 col-xl-3">
+                                <img src="./public/assets/img/portfolio/rss2.png" class="img-fluid galleryImg mb-3"
+                                    alt="page d'un sujet">
+                                    <p class="text-center">Page de sujet</p>
+                            </div>
+                            <div class="col-12 col-md-6 col-xl-3">
+                                <img src="./public/assets/img/portfolio/rss3.png" class="img-fluid galleryImg mb-3"
+                                    alt="page paramètres">
+                                    <p class="text-center">Paramètres</p>
+                            </div>
+                            <div class="col-12 col-md-6 col-xl-3">
+                                <img src="./public/assets/img/portfolio/rss4.png" class="img-fluid galleryImg mb-3"
+                                    alt="page paramètres en mode nuit">
+                                    <p class="text-center">Paramètre - Mode nuit</p>
+                            </div>
+                            <div class="col-12 col-md-6 col-xl-3">
+                                <img src="./public/assets/img/portfolio/rss5.png" class="img-fluid galleryImg mb-3"
+                                    alt="page d'accueil en mode nuit">
+                                    <p class="text-center">Accueil - Mode nuit</p>
+                            </div>
+                            <div class="col-12 col-md-6 col-xl-3">
+                                <img src="./public/assets/img/portfolio/rss-responsive.png" class="img-fluid galleryImg mb-3"
+                                    alt="page d'accueil en version mobile">
+                                    <p class="text-center">Accueil - Version Mobile</p>
+                            </div>
+                            <div class="col-12 col-md-6 col-xl-3">
+                                <img src="./public/assets/img/portfolio/rssParam-responsive.png" class="img-fluid galleryImg mb-3"
+                                    alt="page paramètres en version mobile">
+                                    <p class="text-center">Paramètres - Version Mobile</p>
+                            </div>
+                            <div class="col-12 mt-5">
+                                <div class="d-flex justify-content-center divBtn">
+                                    <button type="button" class="btn btnGallery btnBack fs-5 px-4 py-2"><i
+                                            class="fa-solid fa-arrow-left-long me-3"></i>Quitter la galerie</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- PORTFOLIO WORDPRESS NOEL -->
+            <section class="my-5" id="landing">
+                <div class="row">
+                    <div class="col">
+                        <div class="ruban my-5">
+                            <h3 class="text-center my-5">Site Wordpress</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row presentationSection my-4">
+                    <div
+                        class="col-12 col-lg-6 d-flex flex-column justify-content-around align-items-center order-2 order-lg-1">
+                        <div class="mt-3 mt-md-0 mx-3 ms-lg-5">
+                            <p>Réalisation d'un site fictif multilingue sur la présentation du Marché de Noël de
+                                Strasbourg comprenant une galerie photo, une page contact, une page sur les
+                                programmations et une page d'actualités.</p>
+                            <p></p>
+                        </div>
+                        <div class="row justify-content-evenly badgeSection my-4 my-lg-3">
+                            <span class="col-7 col-md-3 me-md-2 mb-3 badge">Wordpress</span>
+                            <span class="col-7 col-md-3 me-md-2 mb-3 badge">DIVI</span>
+                            <span class="col-7 col-md-3 me-md-2 mb-3 badge">YOAST SEO</span>
+                            <span class="col-7 col-md-3 me-md-2 mb-3 badge">Polylang</span>
+                        </div>
+                        <div class="mx-3 mb-4 mb-lg-4">
+                            <p>Utilisation du theme builder DIVI pour le Responsive Design.</p>
+                        </div>
+                        <div class="d-flex flex-column flex-md-row justify-content-around divBtn mb-lg-4">
+                            <div class="d-flex justify-content-center mb-4 mb-md-0">
+                                <button type="button" class="btn btnGallery btnLook fs-5 px-2 px-md-4 py-2"><i
+                                        class="fa-solid fa-eye me-3"></i>Consulter la galerie</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 oder-1 order-lg-2">
+                        <div class="mx-2 me-lg-5 mb-md-3 mb-lg-0 divImg divRightImg">
+                            <img src="./public/assets/img/portfolio/wordpress1.png"
+                                class="img-fluid portfolioImg rightImg" alt="page d'accueil du wordpress">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row gallerySection my-4 d-none">
+                    <div class="col">
+                        <div class="row justify-content-around mx-2 mx-md-5">
+                            <div class="col-12 col-md-6 col-xl-3">
+                                <img src="./public/assets/img/portfolio/wordpress.png" class="img-fluid galleryImg mb-3"
+                                    alt="page d'accueil">
+                                    <p class="text-center">Page d'accueil</p>
+                            </div>
+                            <div class="col-12 col-md-6 col-xl-3">
+                                <img src="./public/assets/img/portfolio/wordpress3.png" class="img-fluid galleryImg mb-3"
+                                    alt="page d'actualités">
+                                    <p class="text-center">Page d'actualités</p>
+                            </div>
+                            <div class="col-12 col-md-6 col-xl-3">
+                                <img src="./public/assets/img/portfolio/wordpress7.png" class="img-fluid galleryImg mb-3"
+                                    alt="page de contact">
+                                    <p class="text-center">Page contact</p>
+                            </div>
+                            <div class="col-12 col-md-6 col-xl-3">
+                                <img src="./public/assets/img/portfolio/wordpress6.png" class="img-fluid galleryImg mb-3"
+                                    alt="page de galerie photos">
+                                    <p class="text-center">Page galerie photos</p>
+                            </div>
+                            <div class="col-12 col-md-6 col-xl-3">
+                                <img src="./public/assets/img/portfolio/wordpress4.png" class="img-fluid galleryImg mb-3"
+                                    alt="page des programmations">
+                                    <p class="text-center">Page des programmations</p>
+                            </div>
+                            <div class="col-12 mt-5">
+                                <div class="d-flex justify-content-center divBtn">
+                                    <button type="button" class="btn btnGallery btnBack fs-5 px-4 py-2"><i
+                                            class="fa-solid fa-arrow-left-long me-3"></i>Quitter la galerie</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- PORTFOLIO THEME WORDPRESS -->
+            <section class="my-5" id="chifoumi">
+                <div class="row">
+                    <div class="col">
+                        <div class="ruban my-5">
+                            <h3 class="text-center my-5">Création d'un thème Wordpress</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row presentationSection justify-content-around align-items-center my-4">
+                    <div class="col-12 col-lg-6">
+                        <div class="mx-2 ms-lg-5 mb-md-3 mb-lg-0 divImg divLeftImg">
+                            <img src="./public/assets/img/portfolio/dinoword3.png" class="img-fluid portfolioImg leftImg"
+                                alt="page du thème wordpress">
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 d-flex flex-column align-items-center">
+                        <div class="mt-3 mt-md-0 mx-3 me-lg-5">
+                            <p>Création dans une limite de trois jours d'un thème Wordpress sur une thématique autour de
+                                la paléontologie en utilisant les fonctions PHP natives au CMS.</p>
+                            <p>Le contenu des articles est repris de wikipedia pour donner un aperçu.</p>
+                        </div>
+                        <div class="row justify-content-evenly badgeSection my-4 my-lg-3">
+                            <span class="col-7 col-md-3 me-md-2 mb-3 badge">Wordpress</span>
+                            <span class="col-7 col-md-3 me-md-2 mb-3 badge">HTML</span>
+                            <span class="col-7 col-md-3 me-md-2 mb-3 badge">CSS</span>
+                            <span class="col-7 col-md-3 me-md-2 mb-3 badge">PHP</span>
+                            <span class="col-7 col-md-3 me-md-2 mb-3 badge">Bootstrap</span>
+                        </div>
+                        <div class="mx-3 mb-4 mb-lg-4">
+                            <p>Utilisation de la grille Bootstrap pour le Responsive Design.</p>
+                        </div>
+                        <div class="d-flex flex-column flex-md-row justify-content-around divBtn mb-lg-4">
+                            <div class="d-flex justify-content-center mb-4 mb-md-0">
+                                <button type="button" class="btn btnGallery btnLook fs-5 px-2 px-md-4 py-2"><i
+                                        class="fa-solid fa-eye me-3"></i>Consulter la galerie</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row gallerySection my-4 d-none">
+                    <div class="col">
+                        <div class="row justify-content-around mx-2 mx-md-5">
+                            <div class="col-12 col-md-6 col-xl-3">
+                                <img src="./public/assets/img/portfolio/wordino2.png" class="img-fluid galleryImg mb-3"
+                                    alt="page des articles dans une catégorie">
+                                    <p class="text-center">Page d'affichage des articles selon la catégorie</p>
+                            </div>
+                            <div class="col-12 col-md-6 col-xl-3">
+                                <img src="./public/assets/img/portfolio/dinoword1.png" class="img-fluid galleryImg mb-3"
+                                    alt="page d'accueil">
+                                    <p class="text-center">Page d'accueil</p>
+                            </div>
+                            <div class="col-12 col-md-6 col-xl-3">
+                                <img src="./public/assets/img/portfolio/dinoword4.png" class="img-fluid galleryImg mb-3"
+                                    alt="page d'un article">
+                                    <p class="text-center">Page d'un article</p>
+                            </div>
+                            <div class="col-12 mt-5">
+                                <div class="d-flex justify-content-center divBtn">
+                                    <button type="button" class="btn btnGallery btnBack fs-5 px-4 py-2"><i
+                                            class="fa-solid fa-arrow-left-long me-3"></i>Quitter la galerie</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -112,7 +451,8 @@
     </main>
 
     <!-- FOOTER-->
-    <footer class="my-2 my-md-5">
+    <!-- <i class="fa-solid fa-eye me-3"></i> -->
+    <footer class="my-2 my-md-5 my-xxl-3">
         <div class="container">
 
             <div class="row justify-content-around">
@@ -120,6 +460,9 @@
                 <div class="col-12 d-flex flex-column justify-content-center align-items-center footer py-3">
                     <small>MORSCH Perrine © 2023</small>
                     <small>Tous droits réservés</small>
+                </div>
+                <div class="d-flex justify-content-center mt-4">
+                    <button type="button" class="btn" id="sendTop" title="Revenir en haut de la page" aria-label="Return top of the page"><a href="#top"><i class="fa-solid fa-circle-up"></i></a></button>
                 </div>
             </div>
         </div>

@@ -1,0 +1,137 @@
+
+body {
+    font-family: 'Playfair Display', serif;
+    background-image: url(../img/24652959_i759.jpg);
+    background-size: 500px;
+    font-size: 1.3rem;
+    line-height: 40px;
+    overflow-x: hidden;
+}
+
+.navbar {
+    background-color: #b2956a;
+    font-family: 'Pacifico', cursive;
+    font-size: 1.5rem;
+    border-bottom: #121011 4px double;
+}
+
+.navbar-brand {
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+}
+
+.navbar-nav {
+    width: 100%;
+}
+
+.logo {
+    width: 10%;
+}
+
+
+
+/* ------------------------------------------------------------------------------------------------- */
+
+/* GENERAL */
+
+::-webkit-scrollbar {
+    width: 0.4em;
+    background-color: #121011;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #4d433a;
+    outline: 1px solid #4d433a;
+    border-right: #b2956a 1px dotted;
+}
+
+html {
+    scrollbar-color: #4d433a #121011;
+    scrollbar-width: thin;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2.3rem;
+}
+
+h2, h3, h4 {
+    font-family: 'Pacifico', cursive;
+}
+
+a {
+    text-decoration: none;
+    color: #b2956a;
+}
+
+p {
+    text-align: justify;
+}
+
+li {
+    list-style: url('/public/assets/img/grande-fleur.png');
+}
+
+span {
+    font-weight: bold;
+}
+
+.bi {
+    font-size: 3rem;
+}
+
+
+/* ------------------------------------------------------------------------------------------------- */
+
+/* SECTIONS */
+
+
+.mainIcon {
+    background-color: #121011;
+    border-radius: 50%;
+    width: 130px;
+    height: 130px;
+}
+
+.nameSection, .footer {
+    background-color: #b2956a;
+    color: #121011;
+    border: #121011 20px double;
+    box-shadow: #121011 0px 8px 50px 0px, #121011 0px 2px 50px 0px;
+}
+
+.bg-darkLight {
+    background-color: #121011bb;
+    color: #b2956a;
+    border: #b2956a 3px dotted;
+    box-shadow: #121011 0px 8px 50px 0px, #121011 0px 2px 50px 0px;
+}
+
+.bg-darkDark {
+    background-color: #121011;
+    color: #b2956a;
+    border: #b2956a 3px dotted;
+    box-shadow: #121011 0px 8px 50px 0px, #121011 0px 2px 50px 0px;
+}
+
+.leftSection {
+    transform: translate(-100%);
+    opacity: 0;
+    transition: transform 1.2s ease-in-out;
+    transition: opacity 1.2 ease-in-out;
+}
+
+.rightSection {
+    transform: translate(+100%);
+    opacity: 0;
+    transition: transform 1.2s ease-in-out;
+    transition: opacity 1.2 ease-in-out;
+}
+
+.action {
+    transform: none;
+    opacity: 1;
+}

@@ -1,40 +1,98 @@
 body {
+    font-family: 'Playfair Display', serif;
+    background-image: url(../img/24652959_i759.jpg);
+    background-size: 500px;
+    font-size: 1.3rem;
+    line-height: 40px;
+    overflow-x: hidden;
     position: relative;
 }
 
-.mainIcon {
-    background-color: #121011;
-    border-radius: 50%;
-}
+
 
 section {
-    min-height: 25vh;
-    background-color: #121011bb;
+    min-height: 60vh;
+    background-color: #121011ce;
     color: #b2956a;
     border: #b2956a 3px dotted;
     box-shadow: #121011 0px 8px 50px 0px, #121011 0px 2px 50px 0px;
 }
 
+h3 {
+    background-color: #b2956a;
+    color: #121011;
+    position: absolute;
+    width: 80%;
+    height: 55px;
+    top: -100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    clip-path: polygon(100% 0%, 98% 50%, 100% 100%, 0 100%, 2% 50%, 0 0);
+}
+
+.ruban {
+    background-color: #4d433a;
+    position: relative;
+    height: 33px;
+}
+
 .portfolioImg {
+    height: 50vh;
+    width: 100%;
+    object-fit: cover;
+border-radius: 20%;
+border: #b2956a 5px double;
+}
+
+.badgeSection {
+    width: 100%;
+}
+
+.badge {
+    background-color: #4d433a;
+    color: #e6d4b9;
+}
+
+.divBtn {
+    width: 100%;
+}
+
+.btnLook, .btnBack {
+    background-color: transparent;
+    color: #b2956a;
+    border: #b2956a 1px dotted;
+    transition: 2s;
+}
+
+.btnLook:hover, .btnBack:hover {
+    background-color: #b2956a;
+    color: #121011;
+    border: #121011 1px dotted;
+    transition: 2s;
+}
+
+.btnOpenSite {
+    background-color: #b2956a;
+    color: #121011;
+}
+
+.btnOpenSite:hover {
+    background-color: #b2956a;
+    color: #121011;
+}
+
+.galleryImg {
     transform: scale(1);
-    height: 80vh;
-    width: auto;
+    height: 30vh;
+    width: 100%;
     object-fit: cover;
     cursor: pointer;
     transition: 2s;
-    
-    /* padding: 7px; */
-    /* clip-path: ellipse(130px 140px at 10% 20%); */
+    border: #4d433a 5px double;
 }
 
-.divImg {
-    /* border: #b2956a 7px double; */
-    padding: 7px;
-    background-color: #b2956a;
-    /* clip-path: circle(50% at 50% 50%); */
-}
-
-.portfolioImg.zoom {
+.galleryImg.zoom {
     width: 10%;
     position: absolute;
     z-index: 2;
@@ -56,25 +114,52 @@ section {
 }
 
 
+#sendTop a {
+    color: #b2956a;
+    font-size: 3rem;
+}
+
+
+
 @media screen and (min-width: 768px) {
 
     .portfolioImg {
-        transform: scale(1);
-        height: 50vh;
+        height: 35vh;
         width: 100%;
-        object-fit: cover;
         }
     
 }
 
 @media screen and (min-width: 1200px) {
     
+    section {
+        min-height: 70vh;
+    }
 
     .portfolioImg {
-    transform: scale(1);
-    height: 40vh;
+    height: 55vh;
     width: 100%;
-    object-fit: cover;
+    border-radius: 0%;
+    border: none;
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+    }
+
+    .rightImg, .divRightImg {
+        clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+    }
+
+    .leftImg, .divLeftImg {
+        clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+    }
+
+    .divImg {
+        padding: 3px;
+        background-color: #b2956a;
+    }
+
+    .galleryImg {
+        height: 45vh;
+        width: 100%;
     }
     
 }

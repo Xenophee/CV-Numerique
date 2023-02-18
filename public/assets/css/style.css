@@ -1,106 +1,48 @@
-body {
-    font-family: 'Playfair Display', serif;
-    background-image: url(../img/24652959_i759.jpg);
-    background-size: 500px;
-    font-size: 1.3rem;
-    line-height: 40px;
-    overflow-x: hidden;
-}
-
-.navbar {
-    background-color: #b2956a;
-    font-family: 'Pacifico', cursive;
-    font-size: 1.5rem;
-    border-bottom: #121011 4px double;
-}
-
-.navbar-brand {
-    font-family: 'Playfair Display', serif;
-    font-weight: bold;
-}
-
-.navbar-nav {
-    width: 100%;
-}
-
-.logo {
-    width: 10%;
-}
 
 
-/* ------------------------------------------------------------------------------------------------- */
-
-/* GENERAL */
-
-::-webkit-scrollbar {
-    width: 0.4em;
-    background-color: #121011;
-}
-
-::-webkit-scrollbar-thumb {
-    background-color: #4d433a;
-    outline: 1px solid #4d433a;
-    border-right: #b2956a 1px dotted;
-}
-
-html {
-    scrollbar-color: #4d433a #121011;
-    scrollbar-width: thin;
-}
-
-h1 {
-    font-size: 3rem;
-}
-
-h2 {
-    font-size: 2.3rem;
-}
-
-h2, h3, h4 {
-    font-family: 'Pacifico', cursive;
-}
-
-a {
-    text-decoration: none;
-    color: #b2956a;
-}
-
-p {
-    text-align: justify;
-}
-
-li {
-    list-style: url('/public/assets/img/grande-fleur.png');
-}
-
-span {
-    font-weight: bold;
-}
-
-.bi {
-    font-size: 3rem;
-}
 
 main {
     margin-top: 15vh;
     
 }
 
-.nameSection, .footer {
-    background-color: #b2956a;
-    color: #121011;
-    border: #121011 20px double;
-    box-shadow: #121011 0px 8px 50px 0px, #121011 0px 2px 50px 0px;
-}
 
-#about, #journey, #portfolio {
+
+/* #about, #journey, #portfolio {
+    background-color: #121011bb;
+    color: #b2956a;
+    border: #b2956a 3px dotted;
+    box-shadow: #121011 0px 8px 50px 0px, #121011 0px 2px 50px 0px;
+} */
+
+/* #skills, #socialNetwork, #hobbies {
+    background-color: #121011;
+    color: #b2956a;
+    border: #b2956a 3px dotted;
+    box-shadow: #121011 0px 8px 50px 0px, #121011 0px 2px 50px 0px;
+} */
+
+/* ------------------------------------------------------------------------------------------------- */
+
+/* ANIMATION SCROLL */
+
+.leftSection {
+    transform: translate(-100%);
+    opacity: 0;
+    transition: transform 1.2s ease-in-out;
+    transition: opacity 1.2 ease-in-out;
     background-color: #121011bb;
     color: #b2956a;
     border: #b2956a 3px dotted;
     box-shadow: #121011 0px 8px 50px 0px, #121011 0px 2px 50px 0px;
 }
 
-#skills, #socialNetwork, #hobbies {
+.rightSection {
+    transform: translate(+100%);
+    opacity: 0;
+    transition: transform 1.2s ease-in-out;
+    transition: opacity 1.2 ease-in-out;
+    
     background-color: #121011;
     color: #b2956a;
     border: #b2956a 3px dotted;
@@ -112,10 +54,6 @@ main {
 
 /* A PROPOS */
 
-.mainIcon {
-    width: 130px;
-    height: 130px;
-}
 
 .infoContact li {
     list-style: none;
@@ -357,70 +295,25 @@ input[type="image"] {
 
 /* PORTFOLIO */
 
-.card {
-    width: 90%;
-    background-color: #121011;
+.divPortfolioImg {
+    background-color: #120f11;
     border: #b2956a 2px dotted;
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-}
-
-.card img {
-    height: 45vh;
-    object-fit: cover;
-}
-
-.card-body {
-    height: 55%;
-}
-
-.badgeSection {
-    width: 100%;
-}
-
-.badge {
-    background-color:#463120;
-    color: #ddcaac;
-}
-
-.btnCard {
-    background-color: #b2956a;
-    color: #121011;
-    transition: 1s;
-}
-
-.btnCard:hover {
-    background-color: #463120;
-    color: #b2956a;
-    transition: 1s;
-}
-
-.modal-content {
-    background-color: #121011;
-}
-
-.modal-header {
-    border-bottom: #463120 3px solid;
-}
-
-.modal-footer {
-    border-top: #463120 3px solid;
-}
-
-.btn-close {
-    background-color: #b2956a;
-    opacity: 1;
     border-radius: 50%;
+    width: 80%;
 }
 
-.carousel-caption {
-    backdrop-filter: blur(5px);
-    background-color: #33312d60;
+.btnPortfolio {
+    border: #b2956a 1px dotted;
+    color: #b2956a;
+    transition: 2s;
 }
 
-.carousel-caption p {
-    text-align: center !important;
+.btnPortfolio:hover {
+    background-color: #b2956a;
+    border: none;
+    color: #120f11;
+    transition: 2s;
 }
-
 
 /* ------------------------------------------------------------------------------------------------- */
 
@@ -440,40 +333,16 @@ article {
     color: #121011 !important;
     font-size: 1.2rem;
     transition: 1s;
+    /* width: 20%; */
 }
 
 .writtingSite:hover {
     color: #b2956a !important;
     border: #b2956a 1px dotted;
-}
-
-.writtingSite:hover {
     background-color: #121011;
     transition: 1s;
 }
 
-
-
-/* ANIMATION SCROLL */
-
-.leftSection {
-    transform: translate(-100%);
-    opacity: 0;
-    transition: transform 1.2s ease-in-out;
-    transition: opacity 1.2 ease-in-out;
-}
-
-.rightSection {
-    transform: translate(+100%);
-    opacity: 0;
-    transition: transform 1.2s ease-in-out;
-    transition: opacity 1.2 ease-in-out;
-}
-
-.action {
-    transform: none;
-    opacity: 1;
-}
 
 /* ------------------------------------------------------------------------------------------------- */
 
@@ -510,6 +379,13 @@ article {
     input[type="image"] {
         width: 15%;
     }
+
+    .divPortfolioImg {
+        background-color: #120f11;
+        border: #b2956a 2px dotted;
+        border-radius: 50%;
+        width: 100%;
+    }
     
 }
 
@@ -528,30 +404,17 @@ article {
     input[type="image"] {
         width: 100%;
     }
-
-    .card {
-        width: 80%;
-        height: 100vh;
-    }
-
-    .card img {
-        height: 40%;
-        object-fit: cover;
-    }
-    
-    .card-body {
-        height: 60%;
-    }
     
 }
 
 
 @media screen and (min-width: 1200px) {
     
-
-    .card {
-        width: 80%;
-        height: 100vh;
+.divPortfolioImg {
+        background-color: #120f11;
+        border: #b2956a 2px dotted;
+        border-radius: 50%;
+        width: 90%;
     }
     
 }
