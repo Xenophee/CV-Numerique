@@ -2,7 +2,7 @@
 
 
 // SELECTION DES SECTIONS
-const sectionSelect = document.querySelectorAll('section');
+const sectionSelect = document.querySelectorAll('.section');
 const about = document.getElementById('about');
 const skills = document.getElementById('skills');
 const journey = document.getElementById('journey');
@@ -75,8 +75,8 @@ const changeHobby = (event) => {
     if (event.target == programming) {
         titleHobby.textContent = 'Code';
         programming.src = './public/assets/img/programming2.png';
-        writting.src = './public/assets/img/lecriture.png';
-        games.src = './public/assets/img/jeu-video.png';
+        writting.src = './public/assets/img/hobbies-icons/lecriture.webp';
+        games.src = './public/assets/img/hobbies-icons/jeu-video.webp';
         textHobby.textContent = 'Passionnée par le code depuis que j’en ai découvert les bases dans le développement web, j’aime explorer de nouvelles possibilités et découvrir de nouvelles techniques en autodidacte pour améliorer mon niveau dans ce domaine. Je me lance des défis de projet personnel pendant mes heures libres.';
 
         programming.classList.add('active');
@@ -85,8 +85,8 @@ const changeHobby = (event) => {
     } else if (event.target == writting) {
         titleHobby.textContent = 'Ecriture';
         programming.src = './public/assets/img/programming.png';
-        writting.src = './public/assets/img/lecriture2.png';
-        games.src = './public/assets/img/jeu-video.png';
+        writting.src = './public/assets/img/hobbies-icons/lecriture2.webp';
+        games.src = './public/assets/img/hobbies-icons/jeu-video2.webp';
         textHobby.textContent = 'Après m’être consacré pas mal de temps à la lecture, j’ai eu envie de faire partie de ceux qui se trouvent derrière la plume. J’écris des fictions en prenant soin du style et en tentant de proposer des histoires originales que je partage ensuite sur internet.';
 
         programming.classList.remove('active');
@@ -95,8 +95,8 @@ const changeHobby = (event) => {
     } else {
         titleHobby.textContent = 'Jeux vidéo';
         programming.src = './public/assets/img/programming.png';
-        writting.src = './public/assets/img/lecriture.png';
-        games.src = './public/assets/img/jeu-video2.png';
+        writting.src = './public/assets/img/hobbies-icons/lecriture.webp';
+        games.src = './public/assets/img/hobbies-icons/jeu-video2.webp';
         textHobby.textContent = 'J’aime jouer à des jeux vidéo de stratégie et de gestion dans mon temps libre ; cela me permet d’analyser les situations et de prendre des décisions adaptées en prenant plusieurs paramètres en compte pour atteindre des objectifs à long terme.';
 
         programming.classList.remove('active');

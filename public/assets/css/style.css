@@ -8,48 +8,6 @@ main {
 
 
 
-/* #about, #journey, #portfolio {
-    background-color: #121011bb;
-    color: #b2956a;
-    border: #b2956a 3px dotted;
-    box-shadow: #121011 0px 8px 50px 0px, #121011 0px 2px 50px 0px;
-} */
-
-/* #skills, #socialNetwork, #hobbies {
-    background-color: #121011;
-    color: #b2956a;
-    border: #b2956a 3px dotted;
-    box-shadow: #121011 0px 8px 50px 0px, #121011 0px 2px 50px 0px;
-} */
-
-/* ------------------------------------------------------------------------------------------------- */
-
-/* ANIMATION SCROLL */
-
-.leftSection {
-    transform: translate(-100%);
-    opacity: 0;
-    transition: transform 1.2s ease-in-out;
-    transition: opacity 1.2 ease-in-out;
-    background-color: #121011bb;
-    color: #b2956a;
-    border: #b2956a 3px dotted;
-    box-shadow: #121011 0px 8px 50px 0px, #121011 0px 2px 50px 0px;
-}
-
-.rightSection {
-    transform: translate(+100%);
-    opacity: 0;
-    transition: transform 1.2s ease-in-out;
-    transition: opacity 1.2 ease-in-out;
-    
-    background-color: #121011;
-    color: #b2956a;
-    border: #b2956a 3px dotted;
-    box-shadow: #121011 0px 8px 50px 0px, #121011 0px 2px 50px 0px;
-}
-
-
 /* ------------------------------------------------------------------------------------------------- */
 
 /* A PROPOS */

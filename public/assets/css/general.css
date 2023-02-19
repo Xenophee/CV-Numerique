@@ -13,6 +13,7 @@ body {
     font-family: 'Pacifico', cursive;
     font-size: 1.5rem;
     border-bottom: #121011 4px double;
+    width: 100vw;
 }
 
 .navbar-brand {
@@ -117,21 +118,34 @@ span {
     box-shadow: #121011 0px 8px 50px 0px, #121011 0px 2px 50px 0px;
 }
 
-.leftSection {
-    transform: translate(-100%);
-    opacity: 0;
-    transition: transform 1.2s ease-in-out;
-    transition: opacity 1.2 ease-in-out;
-}
 
-.rightSection {
-    transform: translate(+100%);
-    opacity: 0;
-    transition: transform 1.2s ease-in-out;
-    transition: opacity 1.2 ease-in-out;
-}
 
-.action {
-    transform: none;
-    opacity: 1;
+/* MEDIA QUERY POUR L'ANIMATION AU SCROLL */
+
+@media screen and (min-width: 768px) {
+
+    .leftSection {
+        transform: translate(-100%);
+        opacity: 0;
+        transition: transform 1.2s ease-in-out;
+        transition: opacity 1.2 ease-in-out;
+    }
+    
+    .rightSection {
+        transform: translate(+100%);
+        opacity: 0;
+        transition: transform 1.2s ease-in-out;
+        transition: opacity 1.2 ease-in-out;
+    }
+    
+    .action {
+        transform: none;
+        opacity: 1;
+    }
+
+    #about .leftSection, #socialNetwork .rightSection {
+        transform: none;
+        opacity: 1;
+    }
+    
 }

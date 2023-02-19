@@ -5,10 +5,12 @@ body {
     font-size: 1.3rem;
     line-height: 40px;
     overflow-x: hidden;
-    position: relative;
 }
 
-
+/* main.cover {
+    background-color: #121011;
+    z-index: 3;
+} */
 
 section {
     min-height: 60vh;
@@ -16,7 +18,9 @@ section {
     color: #b2956a;
     border: #b2956a 3px dotted;
     box-shadow: #121011 0px 8px 50px 0px, #121011 0px 2px 50px 0px;
+    position: relative;
 }
+
 
 h3 {
     background-color: #b2956a;
@@ -83,7 +87,7 @@ border: #b2956a 5px double;
 }
 
 .galleryImg {
-    transform: scale(1);
+    /* transform: scale(1); */
     height: 30vh;
     width: 100%;
     object-fit: cover;
@@ -96,7 +100,7 @@ border: #b2956a 5px double;
     width: 10%;
     position: absolute;
     z-index: 2;
-    /* transform: scale(0.1); */
+    /* transform: scale(4); */
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -106,15 +110,13 @@ border: #b2956a 5px double;
 .zoom.transform {
     width: 80%;
     height: auto;
-    transform: scale(5);
+    /* transform: scale(1); */
     transition: 2s;
-    /* top: 0%;
-    left: 0%; */
     transform: translate(-50%, -50%);
 }
 
 
-#sendTop a {
+#sendTop a, #goBack a {
     color: #b2956a;
     font-size: 3rem;
 }

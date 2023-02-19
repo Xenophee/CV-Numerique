@@ -1,13 +1,31 @@
 
 
-
+const sectionSelect = document.querySelectorAll('section');
 const presentationSection = document.querySelectorAll('.presentationSection');
 const gallerySection = document.querySelectorAll('.gallerySection');
 const btnGallery = document.querySelectorAll('.btnGallery');
 const btnLook = document.querySelectorAll('.btnLook');
 const btnBack = document.querySelectorAll('.btnBack');
+const portfolioImg = document.querySelectorAll('.galleryImg');
 
 
+// FONCTION D'ANIMATION DES SECTIONS AU SCROLL AU PREMIER CHARGEMENT DE LA PAGE
+const scrollDisplayAnimation = (event) => {
+
+    sectionSelect.forEach(element => {
+
+        const {scrollTop, clientHeight} = document.documentElement;
+        const top = element.getBoundingClientRect().top;
+
+        if (scrollTop > (scrollTop + top) - clientHeight) {
+
+            element.classList.add('action');
+        }
+    });
+}
+
+
+// FONCTION POUR MONTRER / CACHER LA GALERIE
 const showGallery = (event) => {
 
     if (event.target ==  btnLook[0]) {
@@ -59,20 +77,28 @@ const showGallery = (event) => {
     }
 }
 
+
+// FONCTION POUR ZOOMER LES IMAGES DE LA GALERIE
+const zoomImg = (event) => {
+    const body = document.querySelector('main');
+    console.log(event.target);
+    event.target.classList.toggle('zoom');
+    event.target.classList.toggle('transform');
+    body.classList.add('cover');
+}
+
+
+// DECLARATION DES EVENEMENTS
+window.addEventListener('scroll', scrollDisplayAnimation);
+
+portfolioImg.forEach(element => {
+    element.addEventListener('click', zoomImg)
+})
+
 btnGallery.forEach(element => {
     element.addEventListener('click', showGallery)
 })
 
 
 
-const portfolioImg = document.querySelectorAll('.galleryImg');
 
-const zoomImg = (event) => {
-    console.log(event.target);
-    event.target.classList.toggle('zoom');
-    event.target.classList.toggle('transform');
-}
-
-portfolioImg.forEach(element => {
-    element.addEventListener('click', zoomImg)
-})
