@@ -86,7 +86,7 @@ const changeHobby = (event) => {
         titleHobby.textContent = 'Ecriture';
         programming.src = './public/assets/img/programming.png';
         writting.src = './public/assets/img/hobbies-icons/lecriture2.webp';
-        games.src = './public/assets/img/hobbies-icons/jeu-video2.webp';
+        games.src = './public/assets/img/hobbies-icons/jeu-video.webp';
         textHobby.textContent = 'Après m’être consacré pas mal de temps à la lecture, j’ai eu envie de faire partie de ceux qui se trouvent derrière la plume. J’écris des fictions en prenant soin du style et en tentant de proposer des histoires originales que je partage ensuite sur internet.';
 
         programming.classList.remove('active');

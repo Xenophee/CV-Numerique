@@ -7,11 +7,6 @@ body {
     overflow-x: hidden;
 }
 
-/* main.cover {
-    background-color: #121011;
-    z-index: 3;
-} */
-
 section {
     min-height: 60vh;
     background-color: #121011ce;
@@ -26,7 +21,7 @@ h3 {
     background-color: #b2956a;
     color: #121011;
     position: absolute;
-    width: 80%;
+    width: 90%;
     height: 55px;
     top: -100%;
     left: 50%;
@@ -108,7 +103,7 @@ border: #b2956a 5px double;
 }
 
 .zoom.transform {
-    width: 80%;
+    width: 70%;
     height: auto;
     /* transform: scale(1); */
     transition: 2s;
@@ -128,6 +123,10 @@ border: #b2956a 5px double;
     .portfolioImg {
         height: 35vh;
         width: 100%;
+        }
+
+        h3 {
+            width: 80%;
         }
     
 }

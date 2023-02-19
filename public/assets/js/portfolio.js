@@ -29,50 +29,50 @@ const scrollDisplayAnimation = (event) => {
 const showGallery = (event) => {
 
     if (event.target ==  btnLook[0]) {
-        presentationSection[0].classList.add('d-none');
+        presentationSection[1].classList.add('d-none');
         gallerySection[0].classList.remove('d-none');
     } else {
-        presentationSection[0].classList.remove('d-none');
+        presentationSection[1].classList.remove('d-none');
         gallerySection[0].classList.add('d-none');
     }
 
     if (event.target ==  btnLook[1]) {
-        presentationSection[1].classList.add('d-none');
+        presentationSection[2].classList.add('d-none');
         gallerySection[1].classList.remove('d-none');
     } else {
-        presentationSection[1].classList.remove('d-none');
+        presentationSection[2].classList.remove('d-none');
         gallerySection[1].classList.add('d-none');
     }
 
     if (event.target ==  btnLook[2]) {
-        presentationSection[2].classList.add('d-none');
+        presentationSection[3].classList.add('d-none');
         gallerySection[2].classList.remove('d-none');
     } else {
-        presentationSection[2].classList.remove('d-none');
+        presentationSection[3].classList.remove('d-none');
         gallerySection[2].classList.add('d-none');
     }
     
     if (event.target ==  btnLook[3]) {
-        presentationSection[3].classList.add('d-none');
+        presentationSection[4].classList.add('d-none');
         gallerySection[3].classList.remove('d-none');
     } else {
-        presentationSection[3].classList.remove('d-none');
+        presentationSection[4].classList.remove('d-none');
         gallerySection[3].classList.add('d-none');
     }
     
     if (event.target ==  btnLook[4]) {
-        presentationSection[4].classList.add('d-none');
+        presentationSection[5].classList.add('d-none');
         gallerySection[4].classList.remove('d-none');
     } else {
-        presentationSection[4].classList.remove('d-none');
+        presentationSection[5].classList.remove('d-none');
         gallerySection[4].classList.add('d-none');
     }
 
     if (event.target ==  btnLook[5]) {
-        presentationSection[5].classList.add('d-none');
+        presentationSection[6].classList.add('d-none');
         gallerySection[5].classList.remove('d-none');
     } else {
-        presentationSection[5].classList.remove('d-none');
+        presentationSection[6].classList.remove('d-none');
         gallerySection[5].classList.add('d-none');
     }
 }
@@ -80,11 +80,11 @@ const showGallery = (event) => {
 
 // FONCTION POUR ZOOMER LES IMAGES DE LA GALERIE
 const zoomImg = (event) => {
-    const body = document.querySelector('main');
+    // const body = document.querySelector('main');
     console.log(event.target);
     event.target.classList.toggle('zoom');
     event.target.classList.toggle('transform');
-    body.classList.add('cover');
+    // body.classList.add('cover');
 }
 
 

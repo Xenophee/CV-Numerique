@@ -25,10 +25,6 @@ body {
     width: 100%;
 }
 
-.logo {
-    width: 10%;
-}
-
 
 
 /* ------------------------------------------------------------------------------------------------- */
@@ -89,6 +85,12 @@ span {
 
 /* SECTIONS */
 
+.avatar {
+    width: 70%;
+    border-radius: 50%;
+    background-color: #121011;
+    border: #b2956a 2px dotted;
+}
 
 .mainIcon {
     background-color: #121011;
@@ -148,4 +150,11 @@ span {
         opacity: 1;
     }
     
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+
+    .avatar {
+        width: 90%;
+    }
 }
