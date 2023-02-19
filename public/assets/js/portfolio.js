@@ -80,11 +80,9 @@ const showGallery = (event) => {
 
 // FONCTION POUR ZOOMER LES IMAGES DE LA GALERIE
 const zoomImg = (event) => {
-    // const body = document.querySelector('main');
     console.log(event.target);
     event.target.classList.toggle('zoom');
     event.target.classList.toggle('transform');
-    // body.classList.add('cover');
 }
 
 
