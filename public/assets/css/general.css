@@ -47,6 +47,10 @@ html {
     scrollbar-width: thin;
 }
 
+nav li {
+    list-style: none;
+}
+
 h1 {
     font-size: 3rem;
 }
@@ -69,7 +73,7 @@ p {
 }
 
 li {
-    list-style: url('/public/assets/img/grande-fleur.png');
+    list-style: url('../public/assets/img/grande-fleur.png');
 }
 
 span {
