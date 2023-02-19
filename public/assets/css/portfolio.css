@@ -82,7 +82,6 @@ border: #b2956a 5px double;
 }
 
 .galleryImg {
-    /* transform: scale(1); */
     height: 30vh;
     width: 100%;
     object-fit: cover;
@@ -95,7 +94,6 @@ border: #b2956a 5px double;
     width: 10%;
     position: absolute;
     z-index: 2;
-    /* transform: scale(4); */
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -105,11 +103,13 @@ border: #b2956a 5px double;
 .zoom.transform {
     width: 70%;
     height: auto;
-    /* transform: scale(1); */
     transition: 2s;
     transform: translate(-50%, -50%);
 }
 
+.mobileImg.transform {
+    width: 30%;
+}
 
 #sendTop a, #goBack a {
     color: #b2956a;
