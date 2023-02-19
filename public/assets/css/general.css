@@ -47,7 +47,7 @@ html {
     scrollbar-width: thin;
 }
 
-nav li {
+.navbar-nav li {
     list-style: none;
 }
 
@@ -73,7 +73,7 @@ p {
 }
 
 li {
-    list-style: url('../public/assets/img/grande-fleur.png');
+    list-style-image: url('../public/assets/img/grande-fleur.png');
 }
 
 span {
