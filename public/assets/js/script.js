@@ -49,11 +49,11 @@ const scrollDisplayAnimation = (event) => {
 const changeImgIn = (event) => {
 
     if (event.target == personnalityIcon[0]) {
-        event.target.src = './public/assets/img/question2.png';
+        event.target.src = './public/assets/img/personnality-icons/question2.webp';
     } else if (event.target == personnalityIcon[1]) {
-        event.target.src = './public/assets/img/montagne2.png';
+        event.target.src = './public/assets/img/personnality-icons/montagne2.webp';
     } else {
-        event.target.src = './public/assets/img/homme-de-genie2.png';
+        event.target.src = './public/assets/img/personnality-icons/homme-de-genie2.webp';
     }
 }
 
@@ -61,11 +61,11 @@ const changeImgIn = (event) => {
 const changeImgOut = (event) => {
 
     if (event.target == personnalityIcon[0]) {
-        event.target.src = './public/assets/img/question.png';
+        event.target.src = './public/assets/img/personnality-icons/question.webp';
     } else if (event.target == personnalityIcon[1]) {
-        event.target.src = './public/assets/img/montagne.png';
+        event.target.src = './public/assets/img/personnality-icons/montagne.webp';
     } else {
-        event.target.src = './public/assets/img/homme-de-genie.png';
+        event.target.src = './public/assets/img/personnality-icons/homme-de-genie.webp';
     }
 }
 
@@ -74,7 +74,7 @@ const changeImgOut = (event) => {
 const changeHobby = (event) => {
     if (event.target == programming) {
         titleHobby.textContent = 'Code';
-        programming.src = './public/assets/img/programming2.png';
+        programming.src = './public/assets/img/hobbies-icons/programming2.webp';
         writting.src = './public/assets/img/hobbies-icons/lecriture.webp';
         games.src = './public/assets/img/hobbies-icons/jeu-video.webp';
         textHobby.textContent = 'Passionnée par le code depuis que j’en ai découvert les bases dans le développement web, j’aime explorer de nouvelles possibilités et découvrir de nouvelles techniques en autodidacte pour améliorer mon niveau dans ce domaine. Je me lance des défis de projet personnel pendant mes heures libres.';
@@ -84,7 +84,7 @@ const changeHobby = (event) => {
         games.classList.remove('active');
     } else if (event.target == writting) {
         titleHobby.textContent = 'Ecriture';
-        programming.src = './public/assets/img/programming.png';
+        programming.src = './public/assets/img/hobbies-icons/programming.webp';
         writting.src = './public/assets/img/hobbies-icons/lecriture2.webp';
         games.src = './public/assets/img/hobbies-icons/jeu-video.webp';
         textHobby.textContent = 'Après m’être consacré pas mal de temps à la lecture, j’ai eu envie de faire partie de ceux qui se trouvent derrière la plume. J’écris des fictions en prenant soin du style et en tentant de proposer des histoires originales que je partage ensuite sur internet.';
@@ -94,7 +94,7 @@ const changeHobby = (event) => {
         games.classList.remove('active');
     } else {
         titleHobby.textContent = 'Jeux vidéo';
-        programming.src = './public/assets/img/programming.png';
+        programming.src = './public/assets/img/hobbies-icons/programming.webp';
         writting.src = './public/assets/img/hobbies-icons/lecriture.webp';
         games.src = './public/assets/img/hobbies-icons/jeu-video2.webp';
         textHobby.textContent = 'J’aime jouer à des jeux vidéo de stratégie et de gestion dans mon temps libre ; cela me permet d’analyser les situations et de prendre des décisions adaptées en prenant plusieurs paramètres en compte pour atteindre des objectifs à long terme.';
