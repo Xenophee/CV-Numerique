@@ -109,7 +109,7 @@ const changeHobby = (event) => {
 stepChange = () => {
     console.log(stepJourney.value);
 
-    const step0 = '2022/2023';
+    const step0 = '2022/2023 (en cours)';
     const step1 = 'Depuis 2018';
     const step2 = '2016';
     const step3 = '2013';
